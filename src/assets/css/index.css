@@ -15,5 +15,9 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
-    color: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
+    /* color: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%); */
+    background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }

@@ -34,7 +34,8 @@ useEffect(() => {
     alt="Background" 
     style={{ width: '100%', height: '120vh', objectFit: 'cover' }}
     />
-    <h1 className='herosecationheading'>sakshi</h1>
+    <h1 className='herosecationheading'>The Butterfly
+    Where Luxury Takes Flight</h1>
     </div>
 
 
