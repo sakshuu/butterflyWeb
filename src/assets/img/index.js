@@ -1,0 +1,14 @@
+export { default as covermain } from "./covermain.png";
+export { default as AboutSide } from "./AboutSide.png";
+export { default as Vishwaicon } from "./Vishwaicon.png";
+export { default as colswiper } from "./colswiper.png";
+export { default as colswiperone } from "./colswiperone.png";
+export { default as colswipersecond } from "./colswipersecond.png";
+export { default as colswiperthered } from "./colswiperthered.png";
+export { default as gallery } from "./gallery.png";
+export { default as galleryfive } from "./galleryfive.jpg";
+export { default as galleryfour } from "./galleryfour.png";
+export { default as gallerylast } from "./gallerylast.png";
+export { default as galleryone } from "./galleryone.png";
+export { default as gallerythered } from "./gallerythered.png";
+export { default as gallerytwo } from "./gallerytwo.png";

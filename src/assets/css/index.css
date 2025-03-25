@@ -1,0 +1,19 @@
+.maincontainer{
+    background: linear-gradient(179.88deg, #420506 0.1%, #350608 40.02%, #170203 99.91%);
+    position: absolute !important;
+    color: #F5F5F5 !important;
+    /* min-height: 100vh !important; */
+    height: 900% !important;     /* testing    */
+    width: 100% !important; 
+}
+.content{
+    position: relative;
+
+  }
+
+  .herosecationheading{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
+}
