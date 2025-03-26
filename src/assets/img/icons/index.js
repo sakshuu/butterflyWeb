@@ -1,4 +1,5 @@
 export { default as Butterflylogo } from "./Butterflylogo.png";
+export { default as Butterfly } from "./Butterfly.png";
 export { default as arrowdown } from "./arrowdown.png";
 export { default as calls } from "./calls.png";
 export { default as car } from "./car.png";

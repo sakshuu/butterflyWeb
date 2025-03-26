@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AboutSide, colswiper, colswiperone, colswipersecond, colswiperthered } from '../assets/img';
+import { AboutSide, colswiper, colswiperone, colswipersecond, colswiperthered, GroupAboutUs } from '../assets/img';
 import { arrowdown, car, home, location, space, sunlight, vastu } from '../assets/img/icons';
 import "./../assets/css/about.css";
 import { gallery, galleryfive, galleryfour, gallerylast, galleryone, gallerythered, gallerytwo } from '../assets/img';
@@ -65,13 +65,18 @@ const Amenities = () => {
 </div>
 </div>
 
-<img src={gallery} alt="Image 1" width={100}  className="collage-image" />
-            <img src={galleryone} alt="Image 2" width={100}  className="collage-image" />
-            <img src={galleryfour} alt="Image 3"  width={100} className="collage-image" />
+{/* gallery */}
+<h1 className='heroheading'>A collection of moments that define excellence,Showcasing creativity, craftsmanship, and vision.</h1>
+<img src={GroupAboutUs} style={{width:'100%'}} alt="" />
+{/* <div style={{position:'relative'}}>
+<img src={gallery} alt="Image 1" style={{width:'60%', padding:'4px', height:"20%"}}  className="collage-image" />
+            <img src={galleryone} alt="Image 2" style={{width:'20%',  padding:'4px', height:"50%"}}className="collage-image" />
+            <img src={galleryfour} alt="Image 3"  style={{width:'20%',  padding:'4px', height:"50%"}}className="collage-image" />
             <img src={gallerytwo} alt="Image 4" width={100}  className="collage-image" />
             <img src={galleryfive} alt="Image 5"  width={100} className="collage-image" />
             <img src={gallerythered} alt="Image 6" width={100} className="collage-image" />
             <img src={gallerylast} alt="Image 7" width={100} className="collage-image" />
+</div> */}
   </>
 }
 

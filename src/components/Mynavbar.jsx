@@ -1,12 +1,12 @@
 import React from 'react';
 import "./../assets/css/mynavbar.css";
-import { Butterflylogo } from '../assets/img/icons';
+import { Butterfly } from '../assets/img/icons';
 
 const Mynavbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
       <div className="container">
-        <img src={Butterflylogo} alt="" className="logo" />
+        <img src={Butterfly} width={100} alt="" className="logo" />
         <button
           className="navbar-toggler"
           type="button"
@@ -33,7 +33,7 @@ const Mynavbar = () => {
               <a className="nav-link" href="#plans">Plans</a>
             </li>
             <li className="nav-item">
-              <a href="#contact" type='button' className="navBtn">Contact Now
+              <a href="#contact" type='button' style={{textDecoration:'none'}} className="goldBtn">Contact Now
               </a>
             </li>
           </ul>
