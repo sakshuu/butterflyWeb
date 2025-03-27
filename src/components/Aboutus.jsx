@@ -1,7 +1,7 @@
 import React from 'react';
 import "./../assets/css/about.css";
 import { AboutSide } from '../assets/img';
-import { car, currentlocation, home, location, space, sunlight, vastu } from '../assets/img/icons';
+import { car, currentlocation, home, space, sunlight, vastu } from '../assets/img/icons';
 
 const Aboutus = () => {
    
@@ -61,7 +61,6 @@ const Aboutus = () => {
                 </div>
             </div>
         </div>
-
 
 </>
     );

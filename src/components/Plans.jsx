@@ -3,10 +3,10 @@ import { AboutSide, mapgroup, palgroupA, palgroupB, planA, planB, safarisecond }
 import "./../assets/css/plan.css";
 
 const Plans = () => {
-  const [activePlan, setActivePlan] = useState('2BHK'); // State to track the active plan
+  const [activePlan, setActivePlan] = useState('2BHK'); 
 
   const handleToggle = (plan) => {
-    setActivePlan(plan); // Update the active plan when a button is clicked
+    setActivePlan(plan); 
   };
 
   return (
@@ -27,21 +27,6 @@ const Plans = () => {
             )}
           </div>
           <div className="col-5 plans-content">
-            {/* Toggle Buttons */}
-            {/* <div className="btn-group" role="group" aria-label="Basic example" >
-              <button type="button"
-                className={`toggle-btn ${activePlan === '2BHK' ? 'active' : ''}`}
-                onClick={() => handleToggle('2BHK')}
-              >
-                2BHK
-              </button>
-              <button type="button"
-                className={`toggle-btn ${activePlan === '3BHK' ? 'active' : ''}`}
-                onClick={() => handleToggle('3BHK')}
-              >
-                3BHK
-              </button>
-            </div> */}
          <div className="custom-toggle-wrapper d-inline-flex">
       <button
         type="button"
@@ -59,19 +44,19 @@ const Plans = () => {
       </button>
     </div>
 
-            {/* Show both palgroup images, with a border on the active one */}
-            <div className="palgroup-container">
-              <img
-                src={palgroupA}
-                alt="2BHK Group"
-                className={`palgroup-image ${activePlan === '2BHK' ? 'active' : ''}`}
-              />
-              <img
-                src={palgroupB}
-                alt="3BHK Group"
-                className={`palgroup-image ${activePlan === '3BHK' ? 'active' : ''}`}
-              />
-            </div>
+    <div className="palgroup-container">
+  <img
+    src={palgroupA}
+    alt="2BHK Group"
+    className={`palgroup-image ${activePlan === '2BHK' ? 'active' : ''}`}
+  />
+  <img
+    src={palgroupB}
+    alt="3BHK Group"
+    className={`palgroup-image ${activePlan === '3BHK' ? 'active' : ''}`}
+  />
+</div>
+
 
             {/* Description */}
             <p className="plans-description">
@@ -84,7 +69,6 @@ const Plans = () => {
         </div>
 
 <div style={{ display:'flex', justifyContent:'center', alignItems:'center'}}>
-
       <div className='heroheadingpara' >88 Acres The  adventurous, greener, serene and enchanting proposed Deer safari park.</div>
 </div>
         <div className="row">
