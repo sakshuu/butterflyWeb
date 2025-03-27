@@ -4,7 +4,6 @@
     color: #F5F5F5 !important;
     min-height: 100vh !important;
     padding-bottom: 4%;
-    /* height: 900% !important;     testing    */
     width: 100% !important; 
 }
 .content{
@@ -18,7 +17,6 @@
     padding-right: 20px;
 }
   .heroheading{
-    /* color: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%); */
     background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
     -webkit-background-clip: text;
     background-clip: text;

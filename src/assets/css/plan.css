@@ -2,7 +2,7 @@
 
 .section-subtitle {
     font-size: 1.5rem;
-    color: #ffffff; /* White color for "Floor Plans" */
+    color: #ffffff; 
     margin-bottom: 10px;
     text-align: center;
 }
@@ -10,8 +10,7 @@
 
 
 .plan-image {
-    width: 55vmax; /* Match the width as in your original code */
-    /* max-width: 100%; */
+    width: 55vmax; 
     margin-left: -30px;
     height: auto;
 }
@@ -66,7 +65,7 @@
 }
 
 .download-btn {
-    background-color: #d4af37; /* Gold background for the button */
+    background-color: #d4af37; 
     color: #ffffff; /* White text */
     border: none;
     padding: 10px 20px;

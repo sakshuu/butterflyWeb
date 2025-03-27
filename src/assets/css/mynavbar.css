@@ -1,10 +1,8 @@
-/* Add this to your CSS file */
 .navbar {
     font-family: Outfit;
     /* padding: 13px 0; */
     width: 80%;
     margin-left: auto;
-    /* padding: 0px; */
     margin-right: auto;
     margin-top: 10px;
     border-radius: 80px;
@@ -25,6 +23,7 @@
   
   .nav-link {
     margin: 0 15px;
+    font-size: 0.8rem;
     font-weight: 400;
     color: white;
   }
