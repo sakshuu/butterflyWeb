@@ -84,7 +84,7 @@ const Plans = () => {
 
       <div className='headingLandingpage' >
 <span style={{fontSize:'1.44rem', fontWeight:'500'}}>Location</span>
-<h1 className='heroheading' style={{lineHeight:'32px', marginTop:'10px'}}> A Prime Location for a Promising Future, <br/> Live, Work, and Thrive in the Perfect Setting..</h1>
+<h1 className='heroheading' style={{lineHeight:'32px', marginTop:'10px'}}> A Prime Location for a Promising Future, <br/> Live, Work, and Thrive in the Perfect Setting.</h1>
 </div>
       <img src={mapgroup}  style={{width:'100%'}} alt="" />
     </>
