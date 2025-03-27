@@ -13,3 +13,6 @@ export { default as mail } from "./mail.png";
 export { default as space } from "./space.png";
 export { default as sunlight } from "./sunlight.png";
 export { default as vastu } from "./vastu.png";
+export { default as or } from "./or.png";
+export { default as Reralogo } from "./Reralogo.png";
+export { default as copy } from "./copy.png";

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./../assets/css/about.css";
-import { AboutSide, colswiper, colswiperone, colswipersecond, colswiperthered } from '../assets/img';
-import { arrowdown, car, home, location, space, sunlight, vastu } from '../assets/img/icons';
+import { AboutSide } from '../assets/img';
+import { car, currentlocation, home, location, space, sunlight, vastu } from '../assets/img/icons';
 
 const Aboutus = () => {
    
@@ -11,7 +11,7 @@ const Aboutus = () => {
           title: 'Ultra Luxurious 2 & 3 BHK Abodes',
         },
         {
-          icon: location,
+          icon: currentlocation,
           title: 'Location in Heart of Moshi',
         },
         {
@@ -39,15 +39,15 @@ const Aboutus = () => {
             <div className="col-lg-6 text-center" style={{width: '50%'}}>
                 <img src={AboutSide} alt="About Visual" style={{width: '80%'}}/>
             </div>
-            <div className='col-lg-6' style={{width: '50%' , marginTop:'90px'}}>
+            <div className='col-lg-6' style={{width: '50%' , marginTop:'90px', lineHeight:'20px', letterSpacing:'0%'}}>
 
                
-                <span>About Us</span>
-                <h1 className='heroheading'>Float Like a Butterfly, <br/>Beyond Space.</h1>
-                <p>Live every moment in opulence. After all, you've got only one life. Live it like a butterfly, at The Butterfly.</p>
+                <span style={{fontWeight:'400', fontFamily:'Outfit', color:'rgba(255, 255, 255, 0.7)'}}>About Us</span>
+                <h1 className='heroheading' style={{fontFamily:'TT Nooks Trial', fontWeight:'700', lineHeight:'32px', marginTop:'10px'}}>Float Like a Butterfly, <br/>Beyond Space.</h1>
+                <p style={{fontFamily:'Outfit', fontWeight:'400'}}>Live every moment in opulence. After all, you've got only one life. Live it like a butterfly, at The Butterfly.</p>
                 <div className="features-container">
                     {features.map((feature, index) => (
-                        <div className='d-flex align-items-center gap-3 mb-3' key={index}>
+                        <div className='d-flex align-items-center gap-3 mb-1' key={index}>
                             <div className='feature-bg'>
                             <img 
                                 src={feature.icon} 

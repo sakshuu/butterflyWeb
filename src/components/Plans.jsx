@@ -11,37 +11,53 @@ const Plans = () => {
 
   return (
     <>
-      <div className="plans-section">
-        <h2 className="section-subtitle">Floor Plans</h2>
-        <h1 className="heroheading">
-          Thoughtfully Designed for Space and Comfort, Every Layout Crafted for a Seamless Living Experience.
-        </h1>
 
-        <div className="row justify-content-center" style={{ width: '100%', marginTop: '8%' }}>
-          <div className="col-lg-6 text-center" style={{ width: '50%' }}>
-            {/* Show the appropriate floor plan image based on the active plan */}
+      <div className='headingLandingpage' >
+<span style={{fontSize:'1.44rem', fontWeight:'500'}}>Floor Plans</span>
+<h1 className='heroheading' style={{lineHeight:'32px', marginTop:'10px'}}> Thoughtfully Designed for Space and Comfort, Every Layout Crafted for a Seamless Living Experience.</h1>
+</div>
+    
+
+        <div className="row justify-content-start ">
+          <div className="col-7 text-center">
             {activePlan === '2BHK' ? (
               <img src={planA} alt="2BHK Plan" className="plan-image" />
             ) : (
               <img src={planB} alt="3BHK Plan" className="plan-image" />
             )}
           </div>
-          <div className="col-lg-6 plans-content" style={{ width: '50%', marginTop: '90px' }}>
+          <div className="col-5 plans-content">
             {/* Toggle Buttons */}
-            <div className="toggle-buttons">
-              <button
+            {/* <div className="btn-group" role="group" aria-label="Basic example" >
+              <button type="button"
                 className={`toggle-btn ${activePlan === '2BHK' ? 'active' : ''}`}
                 onClick={() => handleToggle('2BHK')}
               >
                 2BHK
               </button>
-              <button
+              <button type="button"
                 className={`toggle-btn ${activePlan === '3BHK' ? 'active' : ''}`}
                 onClick={() => handleToggle('3BHK')}
               >
                 3BHK
               </button>
-            </div>
+            </div> */}
+         <div className="custom-toggle-wrapper d-inline-flex">
+      <button
+        type="button"
+        className={`custom-toggle-btn ${activePlan === "2BHK" ? "active" : ""}`}
+        onClick={() => handleToggle("2BHK")}
+      >
+        2BHK
+      </button>
+      <button
+        type="button"
+        className={`custom-toggle-btn ${activePlan === "3BHK" ? "active" : ""}`}
+        onClick={() => handleToggle("3BHK")}
+      >
+        3BHK
+      </button>
+    </div>
 
             {/* Show both palgroup images, with a border on the active one */}
             <div className="palgroup-container">
@@ -63,12 +79,14 @@ const Plans = () => {
             </p>
 
             {/* Download Brochure Button */}
-            <button className="download-btn">Download Brochure</button>
+            <button className="goldBtn">Download Brochure</button>
           </div>
         </div>
-      </div>
 
-      <p className='text-center heroheading'>88 Acres The  adventurous greener serene and enchanting proposed Deer safari park.</p>
+<div style={{ display:'flex', justifyContent:'center', alignItems:'center'}}>
+
+      <div className='heroheadingpara' >88 Acres The  adventurous, greener, serene and enchanting proposed Deer safari park.</div>
+</div>
         <div className="row">
           <div className="col-6 text-center">
       <img src={AboutSide} alt=""  style={{width:'70%'}}  />
@@ -80,8 +98,10 @@ const Plans = () => {
       </div>
 
 
-
-      <h1 className='heroheading'>A Prime Location for a Promising Future,Live, Work, and Thrive in the Perfect Setting.</h1>
+      <div className='headingLandingpage' >
+<span style={{fontSize:'1.44rem', fontWeight:'500'}}>Location</span>
+<h1 className='heroheading' style={{lineHeight:'32px', marginTop:'10px'}}> A Prime Location for a Promising Future, <br/> Live, Work, and Thrive in the Perfect Setting..</h1>
+</div>
       <img src={mapgroup}  style={{width:'100%'}} alt="" />
     </>
   );

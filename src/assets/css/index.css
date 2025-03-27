@@ -23,8 +23,27 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-family: 'TT Nooks Trial';
     letter-spacing: 4% !important;
     line-height: 45px;
+    font-weight: 700;
+    line-height: 48px;
+    font-size: 2rem;
+    
+}
+  .heroheadingpara{
+    /* color: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%); */
+    background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Outfit';
+    letter-spacing: 4% !important;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3rem;
+    width: 28%;
     
 }
 .goldBtn{
@@ -35,4 +54,10 @@
  font-size: 1rem;
  font-weight: 400;
  color: black;
+}
+.headingLandingpage{
+  margin-top: 8%;
+  letter-spacing: 0%;
+  line-height: 18px;
+  margin-bottom: 3%;
 }
