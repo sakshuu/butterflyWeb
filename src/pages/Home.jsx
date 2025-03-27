@@ -4,7 +4,7 @@ import { covermain } from '../assets/img'
 const Home = () => {
   return <>
   <div className='content'>
-  <img 
+  <img draggable={false}
     src={covermain} 
     alt="Background" 
     style={{ width: '100%', height: '126vh', objectFit: 'cover' }}

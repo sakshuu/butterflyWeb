@@ -118,7 +118,7 @@ const Amenities = () => {
 <h1 className='heroheading' style={{lineHeight:'28px', marginTop:'10px'}}>A collection of moments that define excellence,Showcasing creativity, craftsmanship, and vision</h1>
 </div>
 
-<img src={GroupAboutUs} style={{width:'100%'}} alt="" />
+<img src={GroupAboutUs} style={{width:'100%'}} draggable={false} alt="" />
 {/* <div style={{position:'relative'}}>
 <img src={gallery} alt="Image 1" style={{width:'60%', padding:'4px', height:"20%"}}  className="collage-image" />
             <img src={galleryone} alt="Image 2" style={{width:'20%',  padding:'4px', height:"50%"}}className="collage-image" />
