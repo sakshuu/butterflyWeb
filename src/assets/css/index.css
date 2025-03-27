@@ -61,3 +61,28 @@
   line-height: 18px;
   margin-bottom: 3%;
 }
+
+
+.mobile-coming-soon {
+  display: none;
+  text-align: center;
+  padding: 1rem;
+  background-color: #fffbe6;
+  color: #b38f00;
+  font-weight: 600;
+  border: 2px dashed #ffcc00;
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+/* Show only on mobile screens (max-width: 768px) */
+@media screen and (max-width: 900px) {
+  .mobile-coming-soon {
+    display: block;
+  }
+
+  /* Optionally hide the full Plans section */
+  .maincontainer {
+    display: none;
+  }
+}

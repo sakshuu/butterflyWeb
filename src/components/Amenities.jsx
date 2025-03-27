@@ -69,7 +69,7 @@ const Amenities = () => {
             width: '17%',
             backgroundColor: 'rgba(241, 238, 216, 0.1)',
             paddingTop: '10px',
-               height: '290px'
+               height: '23vmax'
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'center' }}>

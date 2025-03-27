@@ -52,7 +52,7 @@ const App = () => {
     };
   }, []);
 
-  return (
+  return (<>
     <div className="maincontainer">
       <Mynavbar />
         <section id="home">
@@ -74,6 +74,11 @@ const App = () => {
         </section>
       </div>
     </div>
+
+<div className="mobile-coming-soon">
+📱 Mobile version coming soon...
+</div>
+  </>
   );
 };
 
