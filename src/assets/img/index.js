@@ -20,3 +20,4 @@ export { default as safarisecond } from "./safarisecond.png";
 export { default as mapgroup } from "./mapgroup.png";
 export { default as princess } from "./princess.png";
 export { default as GroupAboutUs } from "./GroupAboutUs.png";
+export { default as safariimg } from "./safariimg.png";

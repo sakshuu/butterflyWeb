@@ -1,13 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Mynavbar from './components/Mynavbar';
-import "./assets/css/index.css";
+import './assets/css/index.css';
 import Aboutus from './components/Aboutus';
 import Plans from './components/Plans';
 import Amenities from './components/Amenities';
-import Home from './pages/Home';
 import ContactUs from './components/ContactUs';
+import { covermain } from './assets/img';
 
 const App = () => {
+  const contactRef = useRef(null); 
+
   useEffect(() => {
     const navbar = document.querySelector('.navbar');
 
@@ -26,59 +28,86 @@ const App = () => {
     };
   }, []);
 
-  // Smooth scrolling for anchor links
-  useEffect(() => {
-    const handleSmoothScroll = (e) => {
-      e.preventDefault();
-      const targetId = e.target.getAttribute('href').substring(1); // Remove the '#' from href
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop - 70, // Adjust for fixed navbar height
-          behavior: 'smooth',
-        });
-      }
-    };
-
-    const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach((link) => {
-      link.addEventListener('click', handleSmoothScroll);
-    });
-
-    return () => {
-      links.forEach((link) => {
-        link.removeEventListener('click', handleSmoothScroll);
+ 
+  const handleScrollToContact = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start', 
       });
-    };
-  }, []);
+    }
+  };
 
-  return (<>
-    <div className="maincontainer">
-      <Mynavbar />
+  return (
+    <>
+      <div className="maincontainer">
+        <Mynavbar />
         <section id="home">
-          <Home />
+          <div className="content">
+            <img
+              draggable={false}
+              src={covermain}
+              alt="Background"
+              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+            />
+            <div className="mainsecation">
+              <h1
+                className="heroheading"
+                style={{
+                  textAlign: 'right',
+                  fontFamily: 'TT Nooks Trial',
+                  fontWeight: '700',
+                  lineHeight: '2.5rem',
+                  fontSize: '2.9rem',
+                }}
+              >
+                The Butterfly <br />
+                Where Luxury <br /> Takes Flight
+              </h1>
+              <p
+                style={{
+                  fontFamily: 'Outfit',
+                  fontWeight: '400',
+                  fontSize: '1rem',
+                }}
+              >
+                The Butterfly represents liberation, beauty and aspiration, just <br /> like the life you deserve. It is a 3 & 2 BHK ultra - luxurious project <br /> designed to fulfill your desires, much like the joy of witnessing a <br /> butterfly in flight.
+              </p>
+              <div
+                className="d-flex justify-content-end"
+                style={{ marginTop: '-30px', marginBottom: '10px' }}
+              >
+                <button
+                  className="goldBtn"
+                  style={{ fontFamily: 'Outfit' }}
+                  onClick={handleScrollToContact} 
+                >
+                  Book Your Dream House
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
-      <div style={{ padding: '0px 70px 0px 70px' }}>
-        {/* Each section has an id for anchor scrolling */}
-        <section id="about">
-          <Aboutus />
-        </section>
-        <section id="amenities">
-          <Amenities />
-        </section>
-        <section id="plans">
-          <Plans />
-        </section>
-        <section id="contact">
-          <ContactUs />
-        </section>
-      </div>
-    </div>
 
-<div className="mobile-coming-soon">
-📱 Mobile version coming soon...
-</div>
-  </>
+        <div style={{ padding: '0px 70px 0px 70px' }}>
+
+          <section id="about">
+            <Aboutus />
+          </section>
+          <section id="amenities">
+            <Amenities />
+          </section>
+          <section id="plans">
+            <Plans />
+          </section>
+          <section id="contact" ref={contactRef}> 
+            <ContactUs />
+          </section>
+        </div>
+      </div>
+
+      <div className="mobile-coming-soon">📱 Mobile version coming soon...</div>
+    </>
   );
 };
 

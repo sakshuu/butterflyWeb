@@ -7,7 +7,7 @@ const ContactUs = () => {
   const ContactInfo = [
     {
       title: "Address",
-      description: "Laxmi Nagar, Moshi 412105",
+      description: "Laxmi Nagar, Nr, Moshi, Pune, Pimpei-Chinchwad 412105",
       image:location
     },
     {
@@ -58,12 +58,14 @@ Have a question or need more details? Get in touch with us—we’re here to hel
 <div className='d-flex' >
 
 <div className='contact-social-media'>
-
+<a href=" https://www.instagram.com/vishwa_developers23">
 <img src={insta} width={26} alt="" />
+</a>
 </div>
 <div className='contact-social-media' style={{marginLeft:'30px'}}>
-
+<a href="https://www.facebook.com/share/1Bp7mrKFrS">
 <img src={facebook} width={26}  alt="" />
+</a>
 </div>
 </div>
   </div>

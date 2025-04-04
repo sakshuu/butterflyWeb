@@ -8,7 +8,7 @@ const Aboutus = () => {
     const features = [
         {
           icon: home,
-          title: 'Ultra Luxurious 2 & 3 BHK Abodes',
+          title: 'Work out; stay fit and enjoy good health. Work out; stay fit and enjoy good health.',
         },
         {
           icon: currentlocation,
@@ -36,10 +36,10 @@ const Aboutus = () => {
     return (<>
    
         <div className="row justify-content-center" style={{width: '100%', marginTop: '8%'}}>
-            <div className="col-lg-6 text-center" style={{width: '50%'}}>
+            <div className="col-lg-6 text-center" style={{width: '40%'}}>
                 <img src={AboutSide} alt="About Visual" style={{width: '80%'}}/>
             </div>
-            <div className='col-lg-6' style={{width: '50%' , marginTop:'90px', lineHeight:'20px', letterSpacing:'0%'}}>
+            <div className='col-lg-6' style={{width: '50%' , marginTop:'7rem', lineHeight:'20px', letterSpacing:'0%'}}>
 
                
                 <span style={{fontWeight:'400', fontFamily:'Outfit', color:'rgba(255, 255, 255, 0.7)'}}>About Us</span>

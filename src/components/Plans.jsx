@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { AboutSide, mapgroup, palgroupA, palgroupB, planA, planB, safarisecond } from '../assets/img';
+import { AboutSide, mapgroup, palgroupA, palgroupB, planA, planB, safariimg, safarisecond } from '../assets/img';
 import "./../assets/css/plan.css";
+import ButterflyBrochure from "./../assets/pdf/ButterflyBrochure.pdf"
+import { saveAs } from 'file-saver';
 
 const Plans = () => {
   const [activePlan, setActivePlan] = useState('2BHK'); 
@@ -9,6 +11,11 @@ const Plans = () => {
     setActivePlan(plan); 
   };
 
+  const handleDownload = () => {
+    const fileUrl = ButterflyBrochure; 
+    const fileName = 'ButterflyBrochure.pdf'; 
+    saveAs(fileUrl, fileName);
+  };
   return (
     <>
 
@@ -64,7 +71,7 @@ const Plans = () => {
             </p>
 
             {/* Download Brochure Button */}
-            <button className="goldBtn">Download Brochure</button>
+            <button className="goldBtn" onClick={handleDownload} >Download Brochure</button>
           </div>
         </div>
 
@@ -73,7 +80,7 @@ const Plans = () => {
 </div>
         <div className="row">
           <div className="col-6 text-center">
-      <img src={AboutSide} alt=""  style={{width:'70%'}}  />
+      <img src={safariimg} alt=""  style={{width:'70%'}}  />
 
         </div>
           <div className="col-6 text-center">

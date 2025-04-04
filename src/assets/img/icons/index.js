@@ -1,5 +1,3 @@
-export { default as Butterflylogo } from "./Butterflylogo.png";
-export { default as Butterfly } from "./Butterfly.png";
 export { default as arrowdown } from "./arrowdown.png";
 export { default as calls } from "./calls.png";
 export { default as car } from "./car.png";
@@ -16,3 +14,4 @@ export { default as vastu } from "./vastu.png";
 export { default as or } from "./or.png";
 export { default as Reralogo } from "./Reralogo.png";
 export { default as copy } from "./copy.png";
+export { default as Butterfly } from "./Butterfly.png";

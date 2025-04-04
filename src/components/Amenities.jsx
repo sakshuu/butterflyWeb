@@ -22,27 +22,27 @@ const Amenities = () => {
         const amenities = [
             {
               title: "Open Gym",
-              description: "Work out, stay fit and",
+              description: "Work out; stay fit and enjoy good health. Work out; stay fit and enjoy good health.",
               image:colswiper
             },
             {
               title: "Children's Play Area",
-              description: "A safe and fun spa",
+              description: "Work out; stay fit and enjoy good health. Work out; stay fit and enjoy good health.",
               image:colswiperone
             },
             {
               title: "Senior Citizens Sit-out",
-              description: "Comfortable spaces de",
+              description: "Work out; stay fit and enjoy good health. Work out; stay fit and enjoy good health.",
               image:colswipersecond
             },
             {
               title: "Leisure Time",
-              description: "Perfect spaces to unwind and",
+              description: "Work out; stay fit and enjoy good health. Work out; stay fit and enjoy good health.",
               image:colswiperthered
             },
             {
               title: "Leisure Time",
-              description: "Perfect spaces to unwind ",
+              description: "Work out; stay fit and enjoy good health. Work out; stay fit and enjoy good health.",
               image:colswipersecond
             }
           ];
@@ -77,7 +77,8 @@ const Amenities = () => {
               src={item.image}
               style={{
                 width: '90%',
-                filter: activeIndex === index ? 'none' : 'blur(2px)',
+                // filter: activeIndex === index ? 'none' : 'blur(0px)',
+                filter: activeIndex === index ? 'none' : 'brightness(0.4)',
                 transition: 'filter 0.3s ease'
               }}
               alt={item.title}
@@ -89,11 +90,11 @@ const Amenities = () => {
             padding: '15px 0px 0px 15px',
             fontSize: '0.8rem'
           }}>
-            <div>{item.title}</div>
+            <div style={{fontWeight:'bold'}}>{item.title}</div>
 
             {/* Show description if active */}
             {activeIndex === index && (
-              <div style={{ marginTop: '7px', marginBottom: "2px" }}>
+              <div style={{ marginTop: '7px', marginBottom: "2px", fontWeight:'normal'}}>
                 {item.description}
               </div>
             )}
@@ -113,8 +114,8 @@ const Amenities = () => {
 
 
 {/* gallery */}
-<div className='headingLandingpage' >
-<span style={{fontSize:'1.44rem', fontWeight:'500'}}>Gallery</span>
+<div className='headingLandingpage'>
+<span style={{fontSize:'1.44rem'}}>Gallery</span>
 <h1 className='heroheading' style={{lineHeight:'28px', marginTop:'10px'}}>A collection of moments that define excellence,Showcasing creativity, craftsmanship, and vision</h1>
 </div>
 

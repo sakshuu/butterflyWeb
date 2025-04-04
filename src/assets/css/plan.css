@@ -12,11 +12,12 @@
 .plan-image {
     width: 55vmax; 
     margin-left: -30px;
+    padding-bottom: 15%;
     height: auto;
 }
 .palgroup-container{
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 
@@ -39,7 +40,7 @@
   background-color: transparent;
   color: #e6dfd0;
   border: none;
-  padding: 10px 40px;
+  padding: 10px 60px;
   border-radius: 999px;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -82,8 +83,8 @@
 
 .palgroup-image {
     height: auto;
-    margin: 20px 0;
-    width: 22%; 
+    margin: 30px 0;
+    width: 35%; 
     border: 3px solid transparent;
     border-radius: 8px;
     transition: border 0.3s ease;
