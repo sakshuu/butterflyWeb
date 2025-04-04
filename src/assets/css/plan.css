@@ -93,4 +93,11 @@
   .palgroup-image.active {
     border: 4px solid rgba(204, 162, 76, 1);
   }
+  .mapgridcol{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-radius: 10px;
+  }
   
