@@ -62,8 +62,7 @@ const App = () => {
                 The Butterfly represents liberation, beauty and aspiration, just <br /> like the life you deserve. It is a 3 & 2 BHK ultra - luxurious project <br /> designed to fulfill your desires, much like the joy of witnessing a <br /> butterfly in flight.
               </p>
               <div
-              className='btn-main-home-secation'
-              >
+              className='btn-main-home-secation'>
                 <button
                   className="goldBtn home-goldBtn"
                   style={{ fontFamily: 'Outfit' }}
