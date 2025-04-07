@@ -1,93 +1,272 @@
-  .section-title {
-    font-size: 3rem;
-    font-weight: 700;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 2px;
-    margin-bottom: 1.5rem;
-  }
-  
-  .tagline {
-    font-size: 2.5rem;
-    font-weight: 500;
-    font-family: 'Playfair Display', serif;
-    line-height: 1.3;
-    margin-bottom: 2rem;
-  }
-  
-  .description {
-    font-size: 1.25rem;
-    font-weight: 300;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .feature-box {
-    background: #f8f9fa;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    text-align: center;
-  }
-  
-  .feature-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-  .feature-bg{
+/* Base styles */
+.headingLandingpage {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
 
-      background: rgba(106, 57, 58, 1);
-      border-radius: 50%;
-      transition: all 0.3s ease;
-      height: 30px;
-      width: 30px;
-      text-align: center;
+.tagline-small {
+  font-size: 1.44rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.heroheading {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Amenities section */
+.amenities-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 4rem;
+  justify-content: center;
+}
+
+.amenity-card {
+  width: calc(20% - 16px);
+  background-color: rgba(241, 238, 216, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1%;
+  position: relative;
+  cursor: pointer;
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  height: 30vmax;
+  max-height: 440px;
+}
+
+.amenity-card:hover {
+  /* transform: translateY(-5px); */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+}
+
+.amenity-card.active .amenity-image {
+  filter: none;
+}
+
+.amenity-image-container {
+  width: 100%;
+  height: 20vmax;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.amenity-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4);
+  transition: filter 0.3s ease;
+}
+
+.amenity-content {
+  padding: 20px 4%;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s ease;
+}
+
+.amenity-card.active .amenity-content {
+  color: white;
+}
+
+.amenity-title {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 7px;
+  transition: color 0.3s ease;
+}
+
+.amenity-card.active .amenity-title {
+  color: white;
+}
+
+.amenity-description {
+  font-size: 0.7rem;
+  line-height: 14px;
+  font-family: "Outfit", sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.arrowdownbtn {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 45px;
+  left: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.arrowdownbtn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Gallery section */
+.gallery-heading .heroheading {
+  line-height: 28px;
+  margin-top: 10px;
+}
+
+.gallery-container {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .amenity-card {
+    width: calc(33.33% - 14px);
+    height: auto;
+    min-height: 350px;
   }
-  
-  .feature-icon {
-    width: 16px;
+
+  .amenity-image-container {
+    height: 200px;
   }
-  
-  .feature-title {
-    font-size: 1.20rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 0.5rem;
-    line-height: 28px;
-    font-family: Outfit;
+}
+
+@media (max-width: 768px) {
+  .heroheading {
+    font-size: 2rem;
   }
-  
-  .feature-text {
+
+  .tagline-small {
+    font-size: 1.2rem;
+  }
+
+  .amenity-card {
+    width: calc(50% - 10px);
+  }
+
+  .amenity-image-container {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroheading {
+    font-size: 1.5rem;
+  }
+
+  .tagline-small {
     font-size: 1rem;
-    font-weight: 300;
-    font-family: 'Outfit';
-    opacity: 0.9;
-  }
-  .arrowdownbtn{
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 100%;
- width: 25px;
- height: 25px;
- margin-left: 7px;
- margin-top: 10px;
- text-align: center;
-
-
-  }
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .section-title {
-      font-size: 2.5rem;
-    }
-    
-    .tagline {
-      font-size: 2rem;
-    }
-    
-    .description {
-      font-size: 1.1rem;
-    }
   }
 
+  .amenity-card {
+    width: 100%;
+    margin-bottom: 15px;
+    min-height: 300px;
+  }
 
+  .amenity-image-container {
+    height: 200px;
+  }
 
-  
+  .amenity-title {
+    font-size: 1rem;
+  }
+
+  .amenity-description {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}
+
+/* Additional styles from your original CSS */
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.tagline {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.feature-box {
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-bg {
+  background: rgba(106, 57, 58, 1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+
+.feature-icon {
+  width: 16px;
+}
+
+.feature-title {
+  font-size: 1.20rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+  line-height: 28px;
+  font-family: Outfit;
+}
+
+.feature-text {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Outfit";
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+}
+

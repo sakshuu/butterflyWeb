@@ -14,8 +14,7 @@ const Home = () => {
   <img draggable={false}
     src={covermain} 
     alt="Background" 
-    style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
-    />
+    style={{ width: '100%', height: '100vh', objectFit: 'cover' }}/>
     <div className='mainsecation'>
 
     <h1 className='heroheading' style={{textAlign:'right', fontFamily:'TT Nooks Trial', fontWeight:'700', lineHeight:'2.5rem', fontSize:'2.9rem'}}>The Butterfly <br/>

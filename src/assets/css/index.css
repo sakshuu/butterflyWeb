@@ -10,24 +10,26 @@
     position: relative;
 
   }
-.mainsecation{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    padding-right: 20px;
+
+.backgroundcolorcontent{
+  width: 100%;
+  height: 108vh;
+  object-fit: cover;
 }
-  .heroheading{
-    background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-family: 'TT Nooks Trial';
-    letter-spacing: 4% !important;
-    line-height: 45px;
-    font-weight: 700;
-    line-height: 48px;
-    font-size: 2rem;
-    
+
+
+.heroheading{
+  background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: 'TT Nooks Trial';
+
+  line-height: 45px;
+  font-weight: 700;
+  line-height: 48px;
+  font-size: 3rem;
+  
 }
   .heroheadingpara{
     /* color: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%); */
@@ -38,21 +40,21 @@
     font-family: 'Outfit';
     letter-spacing: 4% !important;
     line-height: 30px;
-    text-align: center;
+    text-align: right !important;
     font-weight: 500;
     font-size: 1.3rem;
     width: 28%;
-    
-}
+  }
 .goldBtn{
   background: linear-gradient(96.44deg, #E7C369 9.54%, #F8EFB2 66.37%, #C99C45 94.08%);
  border-radius: 100px;
- padding: 5px 25px 5px 25px;
+ padding: 5px 23px 5px 25px;
  border: none;
  font-size: 1rem;
  font-weight: 400;
  color: black;
 }
+
 .headingLandingpage{
   margin-top: 8%;
   letter-spacing: 0%;
@@ -72,6 +74,40 @@
   border-radius: 8px;
   margin: 1rem;
 }
+.mainsecation{
+  position: absolute;
+  bottom: 5%;
+  right: 1%;
+  padding-right: 2%;
+}
+.heroheadingmainsecation{
+  background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: right;
+  font-family:TT Nooks Trial !important;
+  font-weight: 700;
+  line-height: 3.6rem !important;
+  font-size: 3.3rem;
+}
+
+.heroparamainsecation{
+  text-align: right;
+  font-family: 'Outfit';
+  font-weight: 400;
+  font-weight: 1rem;
+}
+
+.btn-main-home-secation{
+  display: flex;
+  justify-content: end;
+  margin-top: 8%;
+}
+
+.home-goldBtn{
+  padding: 8px 30px 8px 30px;
+}
 
 /* Show only on mobile screens (max-width: 768px) */
 @media screen and (max-width: 900px) {
@@ -84,3 +120,83 @@
     display: none;
   }
 }
+
+
+/* macBook air */
+@media screen and (max-width: 1280px) {
+  .mainsecation{
+    position: absolute;
+    /* bottom: 1%; */
+    right: 1%;
+    padding-right: 2%;
+}
+.heroheadingmainsecation{
+  font-size: 2.5rem !important;
+  line-height: 2.8rem !important;
+}
+.heroparamainsecation{
+  text-align: right;
+  font-family: 'Outfit';
+  font-weight: 400;
+}
+.btn-main-home-secation{
+  margin-top: 8% !important;
+}
+.btn-main-home-secation{
+  display: flex;
+  justify-content: end;
+  margin-top: 5%;
+}
+}
+
+/* MacBook Pro 14 */
+@media screen and (max-width: 1512px) {
+  .mainsecation{
+    position: absolute;
+    bottom: 8% !important;
+    right: 1%;
+    padding-right: 2%;
+}
+
+
+
+}
+
+/* macBook pro 16 */
+@media screen and (min-width: 1728px) {
+  .mainsecation{
+    position: absolute;
+    bottom: 4% !important;
+    right: 1%;
+    padding-right: 2%;
+}
+.heroheadingmainsecation{
+  font-size: 4rem !important;
+  line-height: 4.2rem !important;
+}
+.heroparamainsecation{
+  font-size: 1.3rem !important;
+}
+
+.home-goldBtn{
+  padding: 12px 40px 12px 40px !important;
+}
+
+}
+
+/* desktop */
+@media screen and (max-width: 1440px) {
+  .mainsecation{
+    position: absolute;
+    bottom: 4% !important;
+    right: 1%;
+    padding-right: 2%;
+}
+}
+
+/* TV */
+@media screen and (max-width: 1280px) {
+
+}
+
+

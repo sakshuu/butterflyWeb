@@ -48,37 +48,24 @@ const App = () => {
               draggable={false}
               src={covermain}
               alt="Background"
-              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              className='backgroundcolorcontent'
             />
             <div className="mainsecation">
+              <div >
               <h1
-                className="heroheading"
-                style={{
-                  textAlign: 'right',
-                  fontFamily: 'TT Nooks Trial',
-                  fontWeight: '700',
-                  lineHeight: '2.5rem',
-                  fontSize: '2.9rem',
-                }}
-              >
+                className="heroheadingmainsecation">
                 The Butterfly <br />
                 Where Luxury <br /> Takes Flight
               </h1>
-              <p
-                style={{
-                  fontFamily: 'Outfit',
-                  fontWeight: '400',
-                  fontSize: '1rem',
-                }}
-              >
+                  </div>
+              <p className="heroparamainsecation" >
                 The Butterfly represents liberation, beauty and aspiration, just <br /> like the life you deserve. It is a 3 & 2 BHK ultra - luxurious project <br /> designed to fulfill your desires, much like the joy of witnessing a <br /> butterfly in flight.
               </p>
               <div
-                className="d-flex justify-content-end"
-                style={{ marginTop: '-30px', marginBottom: '10px' }}
+              className='btn-main-home-secation'
               >
                 <button
-                  className="goldBtn"
+                  className="goldBtn home-goldBtn"
                   style={{ fontFamily: 'Outfit' }}
                   onClick={handleScrollToContact} 
                 >

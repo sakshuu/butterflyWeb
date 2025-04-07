@@ -5,8 +5,8 @@ import { Butterfly } from '../assets/img/icons';
 const Mynavbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div className="container">
-        <img src={Butterfly} width={100} alt="" className="logo" />
+      <div className="container" style={{margin:'0px 10px 0px 10px'}}>
+        <img src={Butterfly} alt="" className="logo" />
         <button
           className="navbar-toggler"
           type="button"
@@ -33,7 +33,7 @@ const Mynavbar = () => {
               <a className="nav-link" href="#plans">Plans</a>
             </li>
             <li className="nav-item">
-              <a href="#contact" type='button' style={{textDecoration:'none', fontSize:'0.8rem'}} className="goldBtn">Contact Now
+              <a href="#contact" type='button' style={{textDecoration:'none', fontSize:'0.8rem',}}className="goldBtn">Contact Now
               </a>
             </li>
           </ul>

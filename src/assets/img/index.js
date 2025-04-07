@@ -13,6 +13,8 @@ export { default as galleryone } from "./galleryone.png";
 export { default as gallerythered } from "./gallerythered.png";
 export { default as gallerytwo } from "./gallerytwo.png";
 export { default as planA } from "./planA.png";
+export { default as planC } from "./planC.png";
+export { default as planD } from "./planD.png";
 export { default as palgroupA } from "./palgroupA.png";
 export { default as planB } from "./planB.png";
 export { default as palgroupB } from "./palgroupB.png";
