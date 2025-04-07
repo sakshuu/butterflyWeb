@@ -35,16 +35,16 @@ const Aboutus = () => {
 
     return (<>
    
-        <div className="row justify-content-center" style={{width: '100%',  marginTop: '8%'}}>
-            <div className="col-6 text-center" style={{width: '40%'}}>
-                <img src={AboutSide} alt="About Visual" style={{width: '80%'}}/>
+        <div className="row d-flex justify-content-center align-items-center" style={{ marginTop: '8%'}}>
+            <div className="col-6" style={{ textAlign:'center', margin:'auto'}}>
+                <img src={AboutSide} alt="About Visual" className='about-img-content-fit' />
             </div>
-            <div className='col-6' style={{width: '50%' , marginTop:'7rem', lineHeight:'20px', letterSpacing:'0%'}}>
+            <div className='col-6' style={{ lineHeight:'20px', letterSpacing:'0%', }}>
 
-               
-                <span style={{fontWeight:'400', fontFamily:'Outfit', color:'rgba(255, 255, 255, 0.7)'}}>About Us</span>
-                <h1 className='heroheading' style={{fontFamily:'TT Nooks Trial', fontWeight:'700', lineHeight:'32px', marginTop:'10px'}}>Float Like a Butterfly, <br/>Beyond Space.</h1>
-                <p style={{fontFamily:'Outfit', fontWeight:'400'}}>Live every moment in opulence. After all, you've got only one life. Live it like a butterfly, at The Butterfly.</p>
+<div>
+                <span className='about-us-title'>About Us</span>
+                <h1 className='minheading-landingpage'>Float Like a Butterfly, <br/>Beyond Space.</h1>
+                <p className='minipara-landingpage'>Live every moment in opulence. After all, you've got only one life. Live it like a butterfly, at The Butterfly.</p>
                 <div className="features-container">
                     {features.map((feature, index) => (
                         <div className='d-flex align-items-center gap-3 mb-1' key={index}>
@@ -52,14 +52,14 @@ const Aboutus = () => {
                             <img 
                                 src={feature.icon} 
                                 alt={feature.title} 
-                                className="feature-icon"
-                                />
+                                className="feature-icon" />
                                 </div>
                             <h4 className="feature-title m-0">{feature.title}</h4>
                         </div>
                     ))}
                 </div>
             </div>
+                </div>
         </div>
 
 </>

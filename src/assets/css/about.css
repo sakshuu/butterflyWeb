@@ -14,9 +14,29 @@
 
 .heroheading {
   font-size: 2.5rem;
-  line-height: 1.2;
+  line-height: 1.2rem;
   font-weight: 700;
   margin: 0;
+}
+.minipara-landingpage{
+  /* style={{fontFamily:'Outfit', fontWeight:'400'}} */
+  font-family: 'Outfit';
+  font-weight: 400;
+  margin-top: 18px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-bottom: 18px;
+}
+.minheading-landingpage{
+  background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* margin-bottom: 15px; */
+  font-family: 'TT Nooks Trial';
+  line-height: 2.6rem;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 /* Amenities section */
@@ -86,7 +106,16 @@
 .amenity-card.active .amenity-title {
   color: white;
 }
-
+.about-img-content-fit{
+  width: 80%;
+  
+}
+.about-us-title{
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Outfit;
+  font-weight: 400;
+  line-height: 1.4rem;
+}
 .amenity-description {
   font-size: 0.7rem;
   line-height: 14px;
@@ -229,15 +258,18 @@
 
 .feature-bg {
   background: rgba(106, 57, 58, 1);
-  border-radius: 50%;
+  border-radius: 100%;
   transition: all 0.3s ease;
   height: 30px;
   width: 30px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .feature-icon {
-  width: 16px;
+  width: 45%;
 }
 
 .feature-title {
