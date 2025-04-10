@@ -2,6 +2,9 @@ import React from 'react'
 import { princess, Vishwaicon } from '../assets/img'
 import { calls, clock, copy, facebook, insta, location, mail, or, Reralogo } from '../assets/img/icons';
 import "./../assets/css/contact.css"
+import { useFormik } from 'formik';
+import * as yup from 'yup';
+import axios from 'axios';
 
 const ContactUs = () => {
   const ContactInfo = [
@@ -26,7 +29,33 @@ const ContactUs = () => {
       image:mail
     }
   ];
-  
+  const formik = useFormik({
+    initialValues: {
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+    },
+    validationSchema: yup.object({
+      name: yup.string().required('Please Enter Name'),
+      email: yup.string().email('Please enter a valid email').required('Please Enter email'),
+      phone: yup.string().required('Please Enter phone'),
+      message: yup.string().required('Type Your message'),
+    }),
+    onSubmit: (values, { resetForm }) => {
+      // Send form data to the backend
+      axios.post('https://butterflyserver.onrender.com/send-email', values)
+        .then((response) => {
+          console.log('Email sent successfully!', response.data);
+          alert('Message sent successfully!');
+          resetForm(); // Reset the form after successful submission
+        })
+        .catch((error) => {
+          console.error('Failed to send email:', error);
+          alert('Failed to send message. Please try again.');
+        });
+    },
+  });
 
   
   return (<>
@@ -80,13 +109,20 @@ Have a question or need more details? Get in touch with us—we’re here to hel
 
 <div className="contact-section">
       <div className="container">
-        <form>
+        <form noValidate onSubmit={formik.handleSubmit}>
           <div className="row">
             <div className="col-md-4 mb-3">
               <input
                 type="text"
                 className="form-control contact-input"
                 placeholder="Name"
+                  id="name"
+            label="Enter your name"
+                value={formik.values.name}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                error={formik.touched.name && Boolean(formik.errors.name)}
+                helperText={formik.touched.name && formik.errors.name}
               />
             </div>
             <div className="col-md-4 mb-3">
@@ -94,6 +130,14 @@ Have a question or need more details? Get in touch with us—we’re here to hel
                 type="text"
                 className="form-control contact-input"
                 placeholder="Contact Number"
+                 id="phone"
+                 name="phone"
+                 autoComplete="phone"
+                 value={formik.values.phone}
+                 onChange={formik.handleChange}
+                 onBlur={formik.handleBlur}
+                 error={formik.touched.phone && Boolean(formik.errors.phone)}
+                 helperText={formik.touched.phone && formik.errors.phone}
               />
             </div>
             <div className="col-md-4 mb-3">
@@ -101,6 +145,15 @@ Have a question or need more details? Get in touch with us—we’re here to hel
                 type="email"
                 className="form-control contact-input"
                 placeholder="Email"
+                id="email"
+                label="Enter your email"
+                name="email"
+                autoComplete="email"
+                value={formik.values.email}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                error={formik.touched.email && Boolean(formik.errors.email)}
+                helperText={formik.touched.email && formik.errors.email}
               />
             </div>
           </div>
@@ -111,6 +164,16 @@ Have a question or need more details? Get in touch with us—we’re here to hel
                 className="form-control contact-textarea"
                 placeholder="Message"
                 rows="5"
+                id="message"
+            label="Enter your message"
+            name="message"
+            multiline
+            value={formik.values.message}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            error={formik.touched.message && Boolean(formik.errors.message)}
+            helperText={formik.touched.message && formik.errors.message}
+
               ></textarea>
             </div>
           </div>
