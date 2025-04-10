@@ -18,6 +18,8 @@ export { default as planD } from "./planD.png";
 export { default as palgroupA } from "./palgroupA.png";
 export { default as planB } from "./planB.png";
 export { default as palgroupB } from "./palgroupB.png";
+export { default as palgroupC } from "./palgroupC.png";
+export { default as palgroupD } from "./palgroupD.png";
 export { default as safarisecond } from "./safarisecond.png";
 export { default as mapgroup } from "./mapgroup.png";
 export { default as princess } from "./princess.png";

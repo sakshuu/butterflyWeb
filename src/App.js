@@ -48,8 +48,8 @@ const App = () => {
               draggable={false}
               src={covermain}
               alt="Background"
-              className='backgroundcolorcontent'
-            />
+              className='backgroundcolorcontent'/>
+              {/* side text */}
             <div className="mainsecation">
               <div >
               <h1
@@ -58,7 +58,7 @@ const App = () => {
                 Where Luxury <br /> Takes Flight
               </h1>
                   </div>
-              <p className="heroparamainsecation" >
+              <p className="heroparamainsecation">
                 The Butterfly represents liberation, beauty and aspiration, just <br /> like the life you deserve. It is a 3 & 2 BHK ultra - luxurious project <br /> designed to fulfill your desires, much like the joy of witnessing a <br /> butterfly in flight.
               </p>
               <div

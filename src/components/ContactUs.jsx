@@ -26,6 +26,9 @@ const ContactUs = () => {
       image:mail
     }
   ];
+  
+
+  
   return (<>
 <div className="row" style={{width:'100%' }}>
   <div className="col-5 " style={{width:'50%'  }}>
@@ -34,7 +37,7 @@ const ContactUs = () => {
   <div className="col-6" style={{width:'50%', marginTop:'8%' }}>
 <div style={{fontFamily:'Outfit'}}>A project by: </div>
 <img src={Vishwaicon} style={{width:'30%',}} alt="" />
-<h1 className='heroheading'>Contact Details</h1>
+<h1 className='heroheading-landingpage'>Contact Details</h1>
 <p className='contactpara'>
 Have a question or need more details? Get in touch with us—we’re here to help! Reach out via call, email, or visit us, and let’s build something amazing together.
 </p>
@@ -71,8 +74,8 @@ Have a question or need more details? Get in touch with us—we’re here to hel
   </div>
 </div>
 <div className='headingLandingpage' >
-<span style={{fontSize:'1.44rem', fontWeight:'500'}}>Get in Touch</span>
-<h1 className='heroheading' style={{lineHeight:'32px', marginTop:'10px'}}>Looking for the perfect partner for your next project? <br/> Get in touch with us today!</h1>
+<div style={{fontSize:'1.4rem', fontWeight:'500', textAlign:'left'}}>Get in Touch</div>
+<h1 className='heroheading-landingpage'>Looking for the perfect partner for your next project? <br/> Get in touch with us today!</h1>
 </div>
 
 <div className="contact-section">

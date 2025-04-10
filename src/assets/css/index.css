@@ -17,18 +17,22 @@
 }
 
 
-.heroheading{
-  background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
+.heroheading-landingpage{
+  /* background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-family: 'TT Nooks Trial';
+  font-family: 'TT Nooks Trial'; */
 
-  line-height: 45px;
-  font-weight: 700;
-  line-height: 48px;
-  font-size: 3rem;
-  
+  background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+  font-family: 'TT Nooks Trial';
+text-align: left !important;
+  font-weight: 700 !important;
+  line-height: 2.9rem !important;
+  font-size: 2.7rem !important;
 }
   .heroheadingpara{
     /* color: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%); */
@@ -39,7 +43,7 @@
     font-family: 'Outfit';
     letter-spacing: 4% !important;
     line-height: 30px;
-    text-align: right !important;
+    text-align: center !important;
     font-weight: 500;
     font-size: 1.3rem;
     width: 28%;
@@ -56,8 +60,6 @@
 
 .headingLandingpage{
   margin-top: 8%;
-  letter-spacing: 0%;
-  line-height: 18px;
   margin-bottom: 3%;
 }
 
@@ -109,16 +111,16 @@
 }
 
 /* Show only on mobile screens (max-width: 768px) */
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .mobile-coming-soon {
     display: block;
-  }
+  } */
 
   /* Optionally hide the full Plans section */
-  .maincontainer {
+  /* .maincontainer {
     display: none;
   }
-}
+} */
 
 
 /* macBook air */
