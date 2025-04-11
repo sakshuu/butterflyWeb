@@ -44,7 +44,7 @@ const ContactUs = () => {
     }),
     onSubmit: (values, { resetForm }) => {
       // Send form data to the backend
-      axios.post('http://localhost:3000/send-email', values)
+      axios.post('http://localhost:5000/send-email', values)
         .then((response) => {
           console.log('Email sent successfully!', response.data);
           alert('Message sent successfully!');
@@ -57,6 +57,8 @@ const ContactUs = () => {
     },
   });
 
+
+  
   
   return (<>
 <div className="row" style={{width:'100%' }}>
