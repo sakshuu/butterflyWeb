@@ -66,8 +66,7 @@ const App = () => {
                 <button
                   className="goldBtn home-goldBtn"
                   style={{ fontFamily: 'Outfit' }}
-                  onClick={handleScrollToContact} 
-                >
+                  onClick={handleScrollToContact} >
                   Book Your Dream House
                 </button>
               </div>
@@ -122,7 +121,6 @@ const App = () => {
         </div>
       </div>
 
-      <div className="mobile-coming-soon">📱 Mobile version coming soon...</div>
     </>
   );
 };

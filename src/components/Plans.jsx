@@ -38,7 +38,7 @@ const Plans = () => {
         <h1 className='heroheading-landingpage'>Thoughtfully Designed for Space and Comfort, Every Layout Crafted for a Seamless Living Experience.</h1>
       </div>
     
-      <div className="row justify-content-start">
+      {/* <div className="row justify-content-start">
         <div className="col-7 text-center">
           <img 
             src={getCurrentPlanImage()} 
@@ -109,7 +109,7 @@ const Plans = () => {
 
           <button className="goldBtn" onClick={handleDownload}>Download Brochure</button>
         </div>
-      </div>
+      </div> */}
 
       {/* Rest of your component remains the same */}
       <div style={{ display:'flex', justifyContent:'center', alignItems:'center'}}>
@@ -131,7 +131,7 @@ const Plans = () => {
       </div>
       
       <div className='mapgridcol'>
-        <div style={{ width:'50%'}}>
+        <div className='map-left-mobile-view' >
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.871327192764!2d73.8535715!3d18.669769199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c9abe8b094e7%3A0xe107735daae8ad38!2sThe%20Butterfly!5e0!3m2!1sen!2sin!4v1743760760154!5m2!1sen!2sin"  
             height="650" 
@@ -142,7 +142,7 @@ const Plans = () => {
             title="Location Map"
           ></iframe>
         </div>
-        <div style={{ width:'50%'}}>
+        <div className='mapsideimg-right-mobile-view'>
           <img src={mapsideimg} style={{width:'100%'}} height="650" alt="Location" />
         </div>
       </div>

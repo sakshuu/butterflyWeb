@@ -367,6 +367,121 @@
   width: 50%;
 
 }
+/* Mobile-specific styles for Amenities section */
+@media screen and (max-width: 900px) {
+  .headingLandingpage {
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 
+  .heroheading-landingpage {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'TT Nooks Trial', serif;
+    background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+  }
+
+  .amenities-container {
+    padding: 0 1.5rem;
+    gap: 10px;
+  }
+
+  .amenity-card {
+    width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+    margin-bottom: 1rem;
+    padding: 1rem !important;
+    background-color: rgba(241, 238, 216, 0.1) !important;
+    border-radius: 10px;
+  }
+
+  .amenity-image-container {
+    height: 0 !important;
+    max-height: 0 !important;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  .amenity-card.active .amenity-image-container {
+    height: 200px !important;
+    max-height: 200px !important;
+    margin-bottom: 1rem;
+  }
+
+  .amenity-image {
+    filter: brightness(0.4) !important;
+  }
+
+  .amenity-card.active .amenity-image {
+    filter: none !important;
+  }
+
+  .amenity-content {
+    padding: 0 !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .amenity-card.active .amenity-content {
+    color: white !important;
+  }
+
+  .amenity-title {
+    font-size: 1.1rem !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+    margin-bottom: 0 !important;
+    font-weight: 500;
+    position: relative;
+    padding-right: 2rem;
+  }
+
+  .amenity-card.active .amenity-title {
+    color: white !important;
+  }
+
+  .amenity-description {
+    font-size: 0.9rem !important;
+    line-height: 1.4rem !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    display: none;
+  }
+
+  .amenity-card.active .amenity-description {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .arrowdownbtn {
+    display: flex !important;
+    position: absolute !important;
+    right: 1rem !important;
+    left: auto !important;
+    bottom: auto !important;
+    top: 1.2rem !important;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .amenity-card.active .arrowdownbtn {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    transform: rotate(180deg);
+  }
+
+  /* Gallery section mobile styles */
+  .gallery-heading .heroheading-landingpage {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .gallery-container {
+    padding: 0 1.5rem;
+  }
+}
 
 /* --------------------------------------------------- mobile css end here --------------------------------------------------- */

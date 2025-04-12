@@ -28,15 +28,15 @@
   line-height: 2.9rem !important;
   font-size: 2.7rem !important;
 }
+
   .heroheadingpara{
-    /* color: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%); */
     background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-family: 'Outfit';
     letter-spacing: 4% !important;
-    line-height: 30px;
+    line-height: 1.3rem;
     text-align: center !important;
     font-weight: 500;
     font-size: 1.3rem;
@@ -83,8 +83,8 @@
   position: absolute;
   bottom: 2%;
   right: 1%;
-  height: 47vh;
-  width: 30vw;
+  /* height: 47vh; */
+  width: 36vw;
   /* background-color: red; */
   padding-right: 2%;
 }
@@ -107,14 +107,20 @@
   font-weight: 1rem;
 }
 
-.btn-main-home-secation-mobile-view{
+.btn-main-home-secation-mobile-view {
   display: flex;
-  justify-content: end;
-  margin-top: 8%;
+  justify-content: end !important;
+  margin-top: 3%;
+  /* background-color: red !important; */
 }
 
 .home-goldBtn{
   padding: 8px 30px 8px 30px;
+}
+.btn-main-home-secation{
+  display: flex;
+  justify-content: end;
+  margin-top: 8%;
 }
 @media (max-width:2000px) and (min-width:900px) {
   #main-desktop-section-padding{
@@ -123,7 +129,12 @@
 }
 @media (max-width:900px) and (min-width:100px) {
   #main-desktop-section-padding{
-    padding: 0px 30px 0px 30px !important;
+    padding: 0px 20px 0px 20px !important;
+
+  }
+  /* .mapsideimg-mobile-view{ */
+    .mapsideimg-right-mobile-view{
+    display: none;
   }
 }
 
@@ -131,7 +142,7 @@
 @media screen and (max-width: 1280px) {
   .mainsecation{
     position: absolute;
-    bottom: 14% !important;
+    bottom: 10% !important;
     right: 1%;
     padding-right: 2%;
 }
@@ -144,13 +155,11 @@
   font-family: 'Outfit';
   font-weight: 400;
 }
-.btn-main-home-secation{
-  margin-top: 8% !important;
-}
+
 .btn-main-home-secation{
   display: flex;
   justify-content: end;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 }
 
@@ -162,8 +171,6 @@
     right: 1%;
     padding-right: 2%;
 }
-
-
 
 }
 
@@ -245,27 +252,51 @@
     text-align: right;
     font-family: 'Outfit';
     font-weight: 400;
-    line-height: 1.2; /* Adjusted for better readability */
-    font-size: 0.9rem; /* Fixed property name (was 'font-weight') */
-    white-space: normal; /* Default value, ensures text wraps */
-    width: 100%; /* Ensure the paragraph takes full width of its container */
+    line-height: 1.2;
+    font-size: 0.9rem; 
+    white-space: normal;
+    width: 100%;
     padding: 2px;
   }
   
   .hero-text-container {
     display: flex;
-    justify-content: flex-end; /* Aligns child to right */
+    justify-content: flex-end; 
   }
   
   .btn-main-home-secation-mobile-view{
-    /* .btn-main-home-secation{ */
       display: flex;
       justify-content: end;
       margin-top: 2%;
-    /* } */
   }
   .home-goldBtn-mobile-view{
       padding: 6px 20px 6px 20px;    
+  }
+  .heroheading-landingpage{
+    background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+    font-family: 'TT Nooks Trial';
+    text-align: left !important;
+    font-weight: 700 !important;
+    line-height: 1.5rem !important;
+    font-size: 1.5rem !important;
+  }
+  
+  .heroheadingpara{
+    background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Outfit';
+    letter-spacing: 4% !important;
+    line-height: 0.9rem;
+    text-align: center !important;
+    font-weight: 500;
+    font-size: 0.9rem;
+    width: 80%;
+    margin-bottom: 20px;
   }
 }
 

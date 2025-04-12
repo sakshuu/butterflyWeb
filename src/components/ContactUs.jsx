@@ -59,7 +59,7 @@ const ContactUs = () => {
   });
 
   return (<>
-<div className="row" style={{width:'100%' }}>
+{/* <div className="row" style={{width:'100%' }}>
   <div className="col-5 " style={{width:'50%'  }}>
     <img src={princess} style={{width:'50vmax', height:'53vmax', marginLeft:'-10%'}}  alt="" />
   </div>
@@ -101,7 +101,7 @@ Have a question or need more details? Get in touch with us—we’re here to hel
 </div>
 </div>
   </div>
-</div>
+</div> */}
 <div className='headingLandingpage' >
 <div style={{fontSize:'1.4rem', fontWeight:'500', textAlign:'left'}}>Get in Touch</div>
 <h1 className='heroheading-landingpage'>Looking for the perfect partner for your next project? <br/> Get in touch with us today!</h1>
@@ -157,7 +157,6 @@ Have a question or need more details? Get in touch with us—we’re here to hel
               />
             </div>
           </div>
-          {/* Second Row: Message */}
           <div className="row">
             <div className="col-12 mb-3">
               <textarea
@@ -177,7 +176,6 @@ Have a question or need more details? Get in touch with us—we’re here to hel
               ></textarea>
             </div>
           </div>
-          {/* Submit Button */}
           <div className="row">
             <div className="col-12 text-end">
               <button type="submit" className="goldBtn">
@@ -192,7 +190,7 @@ Have a question or need more details? Get in touch with us—we’re here to hel
     <div style={{marginTop:'35px'}}>
     <hr/>
 
-    <div className='d-flex justify-content-between'>
+    {/* <div className='d-flex justify-content-between'>
 <div className='copyright'>Copyright © 2025 Butterfly. All rights reserved.</div>
 <div>
   <div className='d-flex justify-space-end gap-2'>
@@ -201,7 +199,7 @@ Have a question or need more details? Get in touch with us—we’re here to hel
     <img src={or} width={60} alt="" />
   </div>
 </div>
-    </div>
+    </div> */}
     </div>
   </>
   )

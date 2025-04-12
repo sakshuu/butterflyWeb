@@ -69,10 +69,8 @@ const Amenities = () => {
             )}
             <div className="amenity-content">
               <div className="amenity-title">{item.title}</div>
-
               {activeIndex === index && <div className="amenity-description">{item.description}</div>}
             </div>
-
           </div>
         ))}
       </div>

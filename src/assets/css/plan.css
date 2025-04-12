@@ -106,8 +106,20 @@
     border-radius: 10px;
   }
   
+.map-left-mobile-view{
+  width: 50% !important;
+}
+
+.mapsideimg-right-mobile-view{
+  width: 50% !important;
+}
 
 
+@media screen and (max-width: 900px) {
+  .map-left-mobile-view{
+    width: 100% !important;
+  }
+}
 
   /* --------------------------------------------------- mobile css start here --------------------------------------------------- */
 

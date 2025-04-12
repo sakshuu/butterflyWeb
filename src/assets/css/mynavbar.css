@@ -1,18 +1,4 @@
-.navbar {
-    font-family: Outfit;
-    /* padding: 13px 0; */
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border-radius: 80px;
-    border: 1px solid rgba(209, 169, 58, 0.4);
-    backdrop-filter: blur(24px);
-}
-.logo{
-    width: 8%;
-    padding: 5px 14px 5px 14px !important;
-}
+
 .navbar.scrolled {
       backdrop-filter: blur(24px)
   }
@@ -29,15 +15,44 @@
     color: white;
   }
 
+@media (max-width:2000px) and (min-width:900px) {
+  .navbar {
+    font-family: Outfit;
+    /* padding: 13px 0; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 80px;
+    border: 1px solid rgba(209, 169, 58, 0.4);
+    backdrop-filter: blur(24px);
+}
 
+.logo{
+  width: 8%;
+  padding: 5px 14px 5px 14px !important;
+}
+}
   /* --------------------------------------------------- mobile css start here --------------------------------------------------- */
 
 /* Show only on mobile screens (max-width: 768px) */
-@media screen and (width: 900px) {
+@media screen and (max-width: 900px) {
   .navbar-mobile-scrren {
     font-family: Outfit;
     border: 1px solid rgba(209, 169, 58, 0.4);
     backdrop-filter: blur(24px);
+}
+.navbar {
+  font-family: Outfit;
+  width: 100vw;
+  fill: rgba(255, 255, 255, 0.20);
+  border-bottom: 1px solid rgba(209, 169, 58, 0.4);
+  /* stroke: rgba(209, 169, 58, 0.40); */
+  backdrop-filter: blur(24px);
+}
+.logo{
+  width: 26%;
+  padding: 5px 14px 5px 14px !important;
 }
 }
 
