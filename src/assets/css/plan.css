@@ -106,3 +106,21 @@
     border-radius: 10px;
   }
   
+
+
+
+  /* --------------------------------------------------- mobile css start here --------------------------------------------------- */
+
+/* Show only on mobile screens (max-width: 768px) */
+/* @media screen and (max-width: 900px) {
+  .mobile-coming-soon {
+    display: block;
+  } */
+  
+  /* Optionally hide the full Plans section */
+  /* .maincontainer {
+    display: none;
+  }
+} */
+
+/* --------------------------------------------------- mobile css end here --------------------------------------------------- */

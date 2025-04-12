@@ -58,9 +58,6 @@ const ContactUs = () => {
     },
   });
 
-
-  
-  
   return (<>
 <div className="row" style={{width:'100%' }}>
   <div className="col-5 " style={{width:'50%'  }}>

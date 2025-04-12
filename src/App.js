@@ -5,7 +5,7 @@ import Aboutus from './components/Aboutus';
 import Plans from './components/Plans';
 import Amenities from './components/Amenities';
 import ContactUs from './components/ContactUs';
-import { covermain } from './assets/img';
+import { covermain, MobileCoverbg } from './assets/img';
 
 const App = () => {
   const contactRef = useRef(null); 
@@ -59,7 +59,7 @@ const App = () => {
               </h1>
                   </div>
               <p className="heroparamainsecation">
-                The Butterfly represents liberation, beauty and aspiration, just <br /> like the life you deserve. It is a 3 & 2 BHK ultra - luxurious project <br /> designed to fulfill your desires, much like the joy of witnessing a <br /> butterfly in flight.
+                The Butterfly represents liberation, beauty and aspiration, just  like the life you deserve. It is a 3 & 2 BHK ultra - luxurious project designed to fulfill your desires, much like the joy of witnessing a butterfly in flight.
               </p>
               <div
               className='btn-main-home-secation'>
@@ -73,21 +73,51 @@ const App = () => {
               </div>
             </div>
           </div>
+          {/* mobile view start*/}
+          <div className="content-mobile-view">
+            <img
+              draggable={false}
+              src={MobileCoverbg}
+              alt="Background"
+              className='backgroundcolorcontent-mobile-view'/>
+             <div className="mainsecation-mobile-view">
+              <div>
+              <h1
+                className="heroheadingmainsecation-mobile-view">
+                The Butterfly <br />
+                Where Luxury <br /> Takes Flight
+              </h1>
+                  </div>
+                  <div className="hero-text-container">
+              <p className="heroparamainsecation-mobile-view">
+                The Butterfly represents liberation, beauty and aspiration, just like the life you deserve. It is a 3 & 2 BHK ultra - luxurious project designed to fulfill your desires, much like the joy of witnessing a butterfly in flight.
+              </p>
+                  </div>
+              <div
+              className='btn-main-home-secation-mobile-view'>
+                <button
+                  className="goldBtn-mobile-view home-goldBtn-mobile-view"
+                  style={{ fontFamily: 'Outfit' }}
+                  onClick={handleScrollToContact} >
+                  Book Your Dream House
+                </button>
+              </div>
+            </div> 
+          </div>
         </section>
 
-        <div style={{ padding: '0px 70px 0px 70px' }}>
-
+        <div id='main-desktop-section-padding'>
           <section id="about">
-            <Aboutus />
+            <Aboutus/>
           </section>
           <section id="amenities">
-            <Amenities />
+            <Amenities/>
           </section>
           <section id="plans">
-            <Plans />
+            <Plans/>
           </section>
           <section id="contact" ref={contactRef}> 
-            <ContactUs />
+            <ContactUs/>
           </section>
         </div>
       </div>

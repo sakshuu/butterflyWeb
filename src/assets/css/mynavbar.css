@@ -30,4 +30,15 @@
   }
 
 
- 
+  /* --------------------------------------------------- mobile css start here --------------------------------------------------- */
+
+/* Show only on mobile screens (max-width: 768px) */
+@media screen and (width: 900px) {
+  .navbar-mobile-scrren {
+    font-family: Outfit;
+    border: 1px solid rgba(209, 169, 58, 0.4);
+    backdrop-filter: blur(24px);
+}
+}
+
+/* --------------------------------------------------- mobile css end here --------------------------------------------------- */

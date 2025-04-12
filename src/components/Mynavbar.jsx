@@ -3,8 +3,10 @@ import "./../assets/css/mynavbar.css";
 import { Butterfly } from '../assets/img/icons';
 
 const Mynavbar = () => {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
+  return (<>
+  
+<div className='desktop-navbar-main'>
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top navbar-mobile-scrren">
       <div className="container" style={{margin:'0px 10px 0px 10px'}}>
         <img src={Butterfly} alt="" className="logo" />
         <button
@@ -40,6 +42,8 @@ const Mynavbar = () => {
         </div>
       </div>
     </nav>
+    </div>
+    </>
   );
 };
 

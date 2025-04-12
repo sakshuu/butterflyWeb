@@ -23,17 +23,7 @@
   line-height: 1.4rem;
   margin-bottom: 18px;
 }
-.minheading-landingpage{
-  background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  /* margin-bottom: 15px; */
-  font-family: 'TT Nooks Trial';
-  line-height: 2.6rem;
-  font-weight: 700;
-  font-size: 2.5rem;
-}
+
 
 /* Amenities section */
 .amenities-container {
@@ -102,10 +92,7 @@
 .amenity-card.active .amenity-title {
   color: white;
 }
-.about-img-content-fit{
-  width: 80%;
-  
-}
+
 .about-us-title{
   color: rgba(255, 255, 255, 0.7);
   font-family: Outfit;
@@ -248,30 +235,7 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.feature-bg {
-  background: rgba(106, 57, 58, 1);
-  border-radius: 100%;
-  transition: all 0.3s ease;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-}
-
-.feature-icon {
-  width: 45%;
-}
-
-.feature-title {
-  font-size: 1.20rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 0.5rem;
-  line-height: 28px;
-  font-family: Outfit;
-}
 
 .feature-text {
   font-size: 1rem;
@@ -293,4 +257,116 @@
     font-size: 1.1rem;
   }
 }
+@media (max-width:2000px) and (min-width:900px) {
+  .aboutus-mobile-view{
+    display: none;
+      }
+      .aboutus-desktop-view{
+        height: 100vh;
+      }
+      .about-img-content-fit{
+        width: 80%;
+      }
+      .minheading-landingpage{
+        background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        /* margin-bottom: 15px; */
+        font-family: 'TT Nooks Trial';
+        line-height: 2.6rem;
+        font-weight: 700;
+        font-size: 2.5rem;
+      }
+      .feature-title {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 0.5rem;
+        line-height: 28px;
+        font-family: Outfit;
+      }
+      .feature-bg {
+        background: rgba(106, 57, 58, 1);
+        border-radius: 100%;
+        transition: all 0.3s ease;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .feature-icon {
+        width: 45%;
+      }
+      
+      
+}
 
+
+
+/* --------------------------------------------------- mobile css start here --------------------------------------------------- */
+
+/* Show only on mobile screens (max-width: 768px) */
+@media screen and (max-width: 900px) {
+.aboutus-desktop-view{
+  display: none;
+}
+  .aboutus-mobile-view{
+   display: block;
+   height: 100vh;
+
+ }
+.about-us-title-mobile-view{
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Outfit;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 1.8rem;
+    text-align: center;
+}
+.about-img-content-fit{
+  width: 75%;
+}
+.minheading-landingpage-mobile-view {
+  background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* margin-bottom: 15px; */
+  font-family: 'TT Nooks Trial';
+  line-height: 1.8rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.feature-title-mobile-view {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+  line-height: 0.9rem;
+  font-family: Outfit;
+}
+}
+.feature-bg {
+  background: rgba(106, 57, 58, 1);
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-icon {
+  width: 50%;
+
+}
+
+
+/* --------------------------------------------------- mobile css end here --------------------------------------------------- */
