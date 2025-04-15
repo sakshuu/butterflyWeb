@@ -61,7 +61,7 @@ const Amenities = () => {
             key={index}
             onClick={() => handleToggle(index)}
           >
-            <div className="amenity-image-container">
+            <div className="-mobile-view">
               <img src={item.image || "/placeholder.svg"} className="amenity-image" alt={item.title} />
             </div>
 
@@ -96,35 +96,51 @@ const Amenities = () => {
       {/* gallery */}
       
       <div className="mobile-above-view-section" >
-
-<div className="headingLandingpage">
+<div className="headingLandingpage" style={{marginTop:'20%'}}>
   <span className="tagline-small-mobile-view">Fly Above!</span>
   <h1 className="heroheading-landingpage-mobile-view">Amenities that gives you butterfly</h1>
 </div>
 
 <div className="amenities-container-mbile-view">
-  {amenities.map((item, index) => (
-    <div 
-      className={`amenity-card ${activeIndex === index ? "active" : ""}`}
-      key={index}
-      onClick={() => handleToggle(index)}
-    >
-      <div className="amenity-image-container" >
-        <img src={item.image || "/placeholder.svg"} className="amenity-image" alt={item.title} />
-      </div>
-
-      {activeIndex !== index && (
-        <div className="arrowdownbtn" >
-          <img src={arrowdown && arrowup} width={10} alt="arrow" />
+  {amenities.map((item, index) => {
+    const isActive = activeIndex === index;
+    return (
+      <div
+        className={`amenity-card-mobile-view ${isActive ? "active" : ""}`}
+        key={index}
+        onClick={() => handleToggle(index)}
+      >
+        <div className="card-header-mobile-view">
+          <div className="amenity-title-mobile-view">{item.title}</div>
+          <div className="arrow-btn-mobile-view">
+            <img
+              src={isActive ? arrowup : arrowdown}
+              width={14}
+              alt="arrow"
+            />
+          </div>
         </div>
-      )}
-      <div className="amenity-content" >
-        <div className="amenity-title" >{item.title}</div>
-        {activeIndex === index && <div  className="amenity-description">{item.description}</div>}
+
+        {isActive && (
+          <div className="card-body-mobile-view">
+            <div className="amenity-image-container-mobile-view">
+              <img
+                src={item.image || "/placeholder.svg"}
+                className="amenity-image-mobile-view"
+                alt={item.title}
+              />
+            </div>
+            <div>
+            <h5 className="amenity-description-mobile-view">{item.title}</h5>
+            <div className="amenity-description-mobile-view">{item.description}</div>
+            </div>
+          </div>
+        )}
       </div>
-    </div>
-  ))}
+    );
+  })}
 </div>
+
 
 
 
