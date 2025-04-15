@@ -220,6 +220,12 @@
  .content{
   display: none;
  }
+       
+.tagline-small-mobile-view{
+  text-align: center;
+  /* margin-top: 200px; */
+}
+
   .content-mobile-view{
    display: block;
    position: relative;
@@ -284,18 +290,18 @@
     font-size: 1.5rem !important;
   }
   
-  .heroheadingpara{
+  .heroheadingpara-mobile-view{
     background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-family: 'Outfit';
     letter-spacing: 4% !important;
-    line-height: 0.9rem;
+    line-height: 1.3rem;
     text-align: center !important;
-    font-weight: 500;
-    font-size: 0.9rem;
-    width: 80%;
+    font-weight: 400;
+    font-size: 1.3rem;
+    width: 90%;
     margin-bottom: 20px;
   }
 }

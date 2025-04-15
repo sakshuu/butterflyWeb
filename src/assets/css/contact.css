@@ -34,14 +34,27 @@
 }
 .contact-vishwa{
     line-height: 23px;
+    
+}
+.contact-vishwa-mobile-view{
+    line-height: 23px;
 
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact-vishwa-icons{
     background-color: rgba(45, 26, 25, 1);
     padding: 4%;
+    /* height: auto; */
     
     /* height: 45px; */
+}
+.contact-vishwa-icons-mobile-view{
+    background-color: rgba(45, 26, 25, 1);
+    padding: 4%;
+    width: auto;
+    border-radius: 20%;
 }
 .contact-vishwa-title{
     font-weight: 600;
@@ -51,7 +64,12 @@
 .contact-vishwa-desc{
     font-weight: 400;
     font-size: 0.9rem;
+    line-height: 0.9rem;
+    font-style: normal;
+    word-break: break-all;
+    display: inline-block;
     font-family: 'Outfit';
+    /* text-align: center; */
 }
 .contact-social-media{
     background-color:rgba(241, 238, 216, 0.8);
@@ -70,16 +88,32 @@ width: 40px;
     font-size: 0.8rem;
 }
 
+.content-mobile-view{
+    display: none;
+}
 
 
-
+ @media screen and (max-width: 900px) {
+    .content-mobile-view{
+        display: block;
+    }
+    .content-desktop-view{
+        display: none;
+    }
+    .footer-mobile-view{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+ }
 /* --------------------------------------------------- mobile css start here --------------------------------------------------- */
 
 /* Show only on mobile screens (max-width: 768px) */
-/* @media screen and (max-width: 900px) {
-  .mobile-coming-soon {
-    display: block;
-  } */
+  /* .mobile-coming-soon { */
+    /* display: block; */
+  /* } */
   
   /* Optionally hide the full Plans section */
   /* .maincontainer {

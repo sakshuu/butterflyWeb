@@ -10,7 +10,7 @@ const ContactUs = () => {
   const ContactInfo = [
     {
       title: "Address",
-      description: "Laxmi Nagar, Nr, Moshi, Pune, Pimpei-Chinchwad 412105",
+      description: "Laxmi Nagar,Moshi 412105",
       image:location
     },
     {
@@ -59,7 +59,10 @@ const ContactUs = () => {
   });
 
   return (<>
-{/* <div className="row" style={{width:'100%' }}>
+  <div className="content-desktop-view">
+
+ 
+<div className="row" style={{width:'100%' }}>
   <div className="col-5 " style={{width:'50%'  }}>
     <img src={princess} style={{width:'50vmax', height:'53vmax', marginLeft:'-10%'}}  alt="" />
   </div>
@@ -101,7 +104,7 @@ Have a question or need more details? Get in touch with us—we’re here to hel
 </div>
 </div>
   </div>
-</div> */}
+</div>
 <div className='headingLandingpage' >
 <div style={{fontSize:'1.4rem', fontWeight:'500', textAlign:'left'}}>Get in Touch</div>
 <h1 className='heroheading-landingpage'>Looking for the perfect partner for your next project? <br/> Get in touch with us today!</h1>
@@ -190,7 +193,7 @@ Have a question or need more details? Get in touch with us—we’re here to hel
     <div style={{marginTop:'35px'}}>
     <hr/>
 
-    {/* <div className='d-flex justify-content-between'>
+    <div className='d-flex justify-content-between'>
 <div className='copyright'>Copyright © 2025 Butterfly. All rights reserved.</div>
 <div>
   <div className='d-flex justify-space-end gap-2'>
@@ -199,7 +202,163 @@ Have a question or need more details? Get in touch with us—we’re here to hel
     <img src={or} width={60} alt="" />
   </div>
 </div>
-    </div> */}
+    </div>
+    </div>
+    </div>
+
+    <div className="content-mobile-view">
+    <div >
+  <div >
+    <img src={princess} style={{width:'100%', height:'100%',}}  alt="" />
+  </div>
+  <div  style={{marginTop:'2%' }}>
+<div className='tagline-small-mobile-view'>A project by: </div>
+<div style={{display:'flex', justifyContent:'center', alignItems:'center', margin:'10px 0px 10px 0px'}}>
+<img src={Vishwaicon} style={{width:'30%'}} alt="" />
+</div>
+<h1 className='heroheading-landingpage-mobile-view'>Contact Details</h1>
+<p className='contactpara'>
+Have a question or need more details? Get in touch with us—we’re here to help! Reach out via call, email, or visit us, and let’s build something amazing together.
+</p>
+
+<div className="row">
+{ContactInfo.map((item, index) => ( 
+  <div className="col-6" >
+    <div>
+      <div className="d-flex gap-2" style={{marginTop:'10%', width:'100%', height:'auto'}} >
+        <div className='contact-vishwa-icons-mobile-view'>
+          <img src={item.image} style={{width:'1.8rem'}} alt="" />
+          </div>
+        <div className='contact-vishwa-mobile-view'>
+{/* <div className='contact-vishwa-title'>{item.title}</div> */}
+<div className='contact-vishwa-desc'>{item.description}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  ))}
+</div>
+<hr style={{borderTop:'2px solid rgba(241, 238, 216, 1)'}}/>
+<div style={{display:'flex' , justifyContent:'center', alignItems:'center'}} >
+
+<div className='contact-social-media'>
+<a href=" https://www.instagram.com/vishwa_developers23">
+<img src={insta} width={26} alt="" />
+</a>
+</div>
+<div className='contact-social-media' style={{marginLeft:'30px'}}>
+<a href="https://www.facebook.com/share/1Bp7mrKFrS">
+<img src={facebook} width={26}  alt="" />
+</a>
+</div>
+</div>
+  </div>
+</div>
+<div className='headingLandingpage'>
+<div className='tagline-small-mobile-view'>Get in Touch</div>
+<h1 className='heroheading-landingpage-mobile-view'>Looking for the perfect partner for your next project? <br/> Get in touch with us today!</h1>
+</div>
+
+<div className="contact-section">
+      <div className="container">
+        <form noValidate onSubmit={formik.handleSubmit}>
+          <div className="row">
+            <div className="col-md-4 mb-3">
+              <input
+                type="text"
+                className="form-control contact-input"
+                placeholder="Name"
+                  id="name"
+            label="Enter your name"
+                value={formik.values.name}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                error={formik.touched.name && Boolean(formik.errors.name)}
+                helperText={formik.touched.name && formik.errors.name}
+              />
+            </div>
+            <div className="col-md-4 mb-3">
+              <input
+                type="text"
+                className="form-control contact-input"
+                placeholder="Contact Number"
+                 id="phone"
+                 name="phone"
+                 autoComplete="phone"
+                 value={formik.values.phone}
+                 onChange={formik.handleChange}
+                 onBlur={formik.handleBlur}
+                 error={formik.touched.phone && Boolean(formik.errors.phone)}
+                 helperText={formik.touched.phone && formik.errors.phone}
+              />
+            </div>
+            <div className="col-md-4 mb-3">
+              <input
+                type="email"
+                className="form-control contact-input"
+                placeholder="Email"
+                id="email"
+                label="Enter your email"
+                name="email"
+                autoComplete="email"
+                value={formik.values.email}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                error={formik.touched.email && Boolean(formik.errors.email)}
+                helperText={formik.touched.email && formik.errors.email}
+              />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12 mb-3">
+              <textarea
+                className="form-control contact-textarea"
+                placeholder="Message"
+                rows="5"
+                id="message"
+            label="Enter your message"
+            name="message"
+            multiline
+            value={formik.values.message}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            error={formik.touched.message && Boolean(formik.errors.message)}
+            helperText={formik.touched.message && formik.errors.message}
+
+              ></textarea>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12 text-center">
+              <button type="submit" className="goldBtn">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div style={{marginTop:'35px'}}>
+    <hr/>
+
+    {/* <div className=''> */}
+<div className='copyright' style={{textAlign:'center'}}>Copyright © 2025 Butterfly. All rights reserved.</div>
+<div>
+  <div className='footer-mobile-view'>
+    <div>
+    <img src={Reralogo} width={40} height={40} alt="" /> 
+    </div>
+    <div>
+   <img src={copy} width={150} height={60} alt="" />
+    </div>
+    <div>
+    <img src={or} width={70} alt="" />
+    </div>
+  </div>
+</div>
+    {/* </div> */}
+    </div>
     </div>
   </>
   )

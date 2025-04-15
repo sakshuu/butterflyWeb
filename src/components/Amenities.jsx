@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { colswiper, colswiperone, colswipersecond, colswiperthered, GroupAboutUs } from "../assets/img"
-import { arrowdown } from "../assets/img/icons"
+import { colswiper, colswiperone, colswipersecond, colswiperthered, gallery, galleryfive, galleryfour, gallerylast, galleryone, gallerythered, gallerytwo, GroupAboutUs } from "../assets/img"
+import { arrowdown, arrowup } from "../assets/img/icons"
 import "../assets/css/about.css"
 
 const Amenities = () => {
@@ -46,6 +46,9 @@ const Amenities = () => {
 
   return (
     <>
+    <div className="dekstop-above-view-section">
+
+    {/* </div> */}
       <div className="headingLandingpage">
         <span className="tagline-small">Fly Above!</span>
         <h1 className="heroheading-landingpage">Amenities that gives you butterfly</h1>
@@ -75,7 +78,7 @@ const Amenities = () => {
         ))}
       </div>
 
-      {/* gallery */}
+
       <div className="headingLandingpage gallery-heading">
         <span className="tagline-small">Gallery</span>
         <h1 className="heroheading-landingpage">
@@ -86,6 +89,62 @@ const Amenities = () => {
       <div className="gallery-container">
         <img src={GroupAboutUs || "/placeholder.svg"} className="gallery-image" draggable={false} alt="Gallery" />
       </div>
+      </div>
+
+
+   
+      {/* gallery */}
+      
+      <div className="mobile-above-view-section" >
+
+<div className="headingLandingpage">
+  <span className="tagline-small-mobile-view">Fly Above!</span>
+  <h1 className="heroheading-landingpage-mobile-view">Amenities that gives you butterfly</h1>
+</div>
+
+<div className="amenities-container-mbile-view">
+  {amenities.map((item, index) => (
+    <div 
+      className={`amenity-card ${activeIndex === index ? "active" : ""}`}
+      key={index}
+      onClick={() => handleToggle(index)}
+    >
+      <div className="amenity-image-container" >
+        <img src={item.image || "/placeholder.svg"} className="amenity-image" alt={item.title} />
+      </div>
+
+      {activeIndex !== index && (
+        <div className="arrowdownbtn" >
+          <img src={arrowdown && arrowup} width={10} alt="arrow" />
+        </div>
+      )}
+      <div className="amenity-content" >
+        <div className="amenity-title" >{item.title}</div>
+        {activeIndex === index && <div  className="amenity-description">{item.description}</div>}
+      </div>
+    </div>
+  ))}
+</div>
+
+
+
+<div className="headingLandingpage gallery-heading">
+        <span className="tagline-small-mobile-view">Gallery</span>
+        <h1 className="heroheading-landingpage-mobile-view">
+          A collection of moments that define excellence, Showcasing creativity, craftsmanship, and vision
+        </h1>
+      </div>
+
+      <div className="gallery-container">
+        <img className="gallery-mobile-view" src={gallery} alt="" />
+        <img className="gallery-mobile-view" src={galleryfive} alt="" />
+        <img className="gallery-mobile-view" src={galleryfour} alt="" />
+        <img className="gallery-mobile-view" src={gallerythered} alt="" />
+        <img className="gallery-mobile-view" src={gallerylast} alt="" />
+        <img className="gallery-mobile-view" src={galleryone} alt="" />
+      </div>
+</div>
+
     </>
   )
 }

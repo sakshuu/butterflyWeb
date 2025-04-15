@@ -157,10 +157,10 @@
 
 @media (max-width: 768px) {
  
-
+/* 
   .tagline-small {
     font-size: 1.2rem;
-  }
+  } */
 
   .amenity-card {
     width: calc(50% - 10px);
@@ -174,9 +174,9 @@
 @media (max-width: 480px) {
 
 
-  .tagline-small {
+  /* .tagline-small {
     font-size: 1rem;
-  }
+  } */
 
   .amenity-card {
     width: 100%;
@@ -257,10 +257,32 @@
     font-size: 1.1rem;
   }
 }
+
+/* .content-mobile-view{ */
+  /* display: none; */
+    /* } */
+/* --------------------------------------------------- mobile css start here --------------------------------------------------- */
+
+/* Show only on mobile screens (max-width: 768px) */
+/* @media screen and (max-width: 900px) {
+ .content{
+  display: none;
+ }
+  .content-mobile-view{
+   display: block;
+   position: relative;
+
+ } */
+
+.mobile-above-view-section{
+  display: none;
+}
 @media (max-width:2000px) and (min-width:900px) {
+ 
   .aboutus-mobile-view{
     display: none;
       }
+
       .aboutus-desktop-view{
         height: 100vh;
       }
@@ -318,6 +340,13 @@
    height: 100vh;
 
  }
+ .dekstop-above-view-section{
+  display: none;
+}
+.mobile-above-view-section{
+  display: block;
+  margin-top: 8%;
+}
 .about-us-title-mobile-view{
     color: rgba(255, 255, 255, 0.7);
     font-family: Outfit;
@@ -368,26 +397,52 @@
 
 }
 /* Mobile-specific styles for Amenities section */
+
+/* Mobile-specific styles */
 @media screen and (max-width: 900px) {
-  .headingLandingpage {
-    padding: 0 1.5rem;
-    margin-bottom: 1.5rem;
+  .aboutus-desktop-view {
+    display: none;
   }
 
-  .heroheading-landingpage {
+  .aboutus-mobile-view {
+    display: block;
+    height: 100vh;
+  }
+
+  .dekstop-above-view-section {
+    display: none;
+  }
+
+  .mobile-above-view-section {
+    display: block;
+    margin-top: 8%;
+  }
+
+  .tagline-small-mobile-view {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .heroheading-landingpage-mobile-view {
     font-size: 1.8rem;
-    line-height: 2.2rem;
-    text-align: left;
+    line-height: 1.8rem;
+    text-align: center;
     font-weight: 700;
-    font-family: 'TT Nooks Trial', serif;
-    background: linear-gradient(91.4deg, #E8C66E 0%, #F5E8A6 50%, #CDA44F 100%);
+    font-family: "TT Nooks Trial", serif;
+    background: linear-gradient(91.4deg, #e8c66e 0%, #f5e8a6 50%, #cda44f 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     margin-bottom: 1rem;
   }
 
-  .amenities-container {
+  .amenities-container-mbile-view {
+    display: flex;
+    flex-direction: column;
     padding: 0 1.5rem;
     gap: 10px;
   }
@@ -400,6 +455,7 @@
     padding: 1rem !important;
     background-color: rgba(241, 238, 216, 0.1) !important;
     border-radius: 10px;
+    position: relative;
   }
 
   .amenity-image-container {
@@ -482,6 +538,13 @@
   .gallery-container {
     padding: 0 1.5rem;
   }
+
+  .gallery-mobile-view {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
 }
+
 
 /* --------------------------------------------------- mobile css end here --------------------------------------------------- */
