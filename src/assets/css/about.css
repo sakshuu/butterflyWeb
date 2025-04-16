@@ -653,7 +653,11 @@
   flex: 0 0 100px;
 }
 
-
+.hidden-title {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
 
 .amenity-image-mobile-view {
   width: 100px;
@@ -673,5 +677,3 @@
 
 
 /* --------------------------------------------------- mobile css end here --------------------------------------------------- */
-
-

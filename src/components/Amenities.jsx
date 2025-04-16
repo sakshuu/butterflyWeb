@@ -20,7 +20,17 @@ const Amenities = () => {
     gallerythered, 
     gallerytwo,
   ];
+  const handleZoom = (src) => {
+    // Display the clicked image in zoomed view
+    const zoomContainer = document.querySelector(".zoom-container");
+    zoomContainer.style.display = "flex";
+    zoomContainer.querySelector("img").src = src;
+  };
 
+  const closeZoom = () => {
+    const zoomContainer = document.querySelector(".zoom-container");
+    zoomContainer.style.display = "none";
+  };
   const amenities = [
     {
       title: "Open Gym",
@@ -95,9 +105,9 @@ const Amenities = () => {
         </h1>
       </div>
 
-       <div className="gallery-container">
+      <div className="gallery-container">
         <img src={GroupAboutUs || "/placeholder.svg"} className="gallery-image" draggable={false} alt="Gallery" />
-      </div> 
+      </div>
       </div>
 
 
@@ -111,43 +121,38 @@ const Amenities = () => {
 </div>
 
 <div className="amenities-container-mbile-view">
-  {amenities.map((item, index) => {
-    const isActive = activeIndex === index;
-    return (
-      <div
-        className={`amenity-card-mobile-view ${isActive ? "active" : ""}`}
-        key={index}
-        onClick={() => handleToggle(index)}>
-        <div className="card-header-mobile-view">
-          <div className="amenity-title-mobile-view">{item.title}</div>
-          <div className="arrow-btn-mobile-view">
-            <img
-              src={isActive ? arrowup : arrowdown}
-              width={14}
-              alt="arrow"
-            />
-          </div>
-        </div>
+      {amenities.map((item, index) => {
+        const isActive = activeIndex === index
+        return (
+          <div className={`amenity-card-mobile-view ${isActive ? "active" : ""}`}
+            key={index}
+            onClick={() => handleToggle(index)}
+          >
+            <div className="card-header-mobile-view">
+              <div className='amenity-title-mobile-view'>{item.title}</div>
+              <div className="arrow-btn-mobile-view">
+                <img src={isActive ? arrowup : arrowdown} width={14} alt="arrow" />
+              </div>
+            </div>
 
-        {isActive && (
-          <div className="card-body-mobile-view">
-            <div className="amenity-image-container-mobile-view">
-              <img
-                src={item.image || "/placeholder.svg"}
-                className="amenity-image-mobile-view"
-                alt={item.title}
-              />
-            </div>
-            <div>
-            <h5 className="amenity-description-mobile-view">{item.title}</h5>
-            <div className="amenity-description-mobile-view">{item.description}</div>
-            </div>
+            {isActive && (
+              <div className="card-body-mobile-view">
+                <div className="amenity-image-container-mobile-view">
+                  <img src={item.image || "/placeholder.svg"} className="amenity-image-mobile-view" alt={item.title} />
+                </div>
+                <div>
+                  <div>
+{/* <img src={arrowdown} width={14} alt="arrow"/> */}
+                  {/* <h5 className="amenity-title-body-mobile-view">{item.title}</h5> */}
+                  </div>
+                  <div className="amenity-description-mobile-view">{item.description}</div>
+                </div>
+              </div>
+            )}
           </div>
-        )}
-      </div>
-    );
-  })}
-</div>
+        )
+      })}
+    </div>
 
 
 
@@ -163,6 +168,7 @@ const Amenities = () => {
       {imagesGallery.map((image, index) => (
         <img className="gallery-mobile-view"  src={image} alt="" />
           ))}
+    
       </div>
 </div>
 
