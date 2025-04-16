@@ -11,6 +11,15 @@ const Amenities = () => {
   const handleToggle = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index))
   }
+  const imagesGallery = [
+    gallery, 
+    galleryfive, 
+    galleryfour, 
+    gallerylast, 
+    galleryone, 
+    gallerythered, 
+    gallerytwo,
+  ];
 
   const amenities = [
     {
@@ -86,9 +95,9 @@ const Amenities = () => {
         </h1>
       </div>
 
-      <div className="gallery-container">
+       <div className="gallery-container">
         <img src={GroupAboutUs || "/placeholder.svg"} className="gallery-image" draggable={false} alt="Gallery" />
-      </div>
+      </div> 
       </div>
 
 
@@ -108,8 +117,7 @@ const Amenities = () => {
       <div
         className={`amenity-card-mobile-view ${isActive ? "active" : ""}`}
         key={index}
-        onClick={() => handleToggle(index)}
-      >
+        onClick={() => handleToggle(index)}>
         <div className="card-header-mobile-view">
           <div className="amenity-title-mobile-view">{item.title}</div>
           <div className="arrow-btn-mobile-view">
@@ -152,12 +160,9 @@ const Amenities = () => {
       </div>
 
       <div className="gallery-container">
-        <img className="gallery-mobile-view" src={gallery} alt="" />
-        <img className="gallery-mobile-view" src={galleryfive} alt="" />
-        <img className="gallery-mobile-view" src={galleryfour} alt="" />
-        <img className="gallery-mobile-view" src={gallerythered} alt="" />
-        <img className="gallery-mobile-view" src={gallerylast} alt="" />
-        <img className="gallery-mobile-view" src={galleryone} alt="" />
+      {imagesGallery.map((image, index) => (
+        <img className="gallery-mobile-view"  src={image} alt="" />
+          ))}
       </div>
 </div>
 

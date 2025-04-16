@@ -44,8 +44,8 @@
   position: relative;
   cursor: pointer;
   /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
-  height: 30vmax;
-  max-height: 440px;
+  height: 26vmax;
+  /* max-height: 440px; */
 }
 
 .amenity-card:hover {
@@ -116,7 +116,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 45px;
+  bottom: 40px;
   left: 20px;
   transition: background-color 0.3s ease;
 }
@@ -178,11 +178,11 @@
     font-size: 1rem;
   } */
 
-  .amenity-card {
+  /* .amenity-card {
     width: 100%;
     margin-bottom: 15px;
     min-height: 300px;
-  }
+  } */
 
   .amenity-image-container {
     height: 200px;
@@ -443,7 +443,7 @@
     gap: 10px;
   }
 
-  .amenity-card {
+  /* .amenity-card {
     width: 100% !important;
     height: auto !important;
     min-height: auto !important;
@@ -452,7 +452,7 @@
     background-color: rgba(241, 238, 216, 0.1) !important;
     border-radius: 10px;
     position: relative;
-  }
+  } */
 
   .amenity-image-container {
     height: 0 !important;
@@ -673,3 +673,5 @@
 
 
 /* --------------------------------------------------- mobile css end here --------------------------------------------------- */
+
+

@@ -56,6 +56,22 @@
   color: #000;
   font-weight: 700;
 }
+.custom-toggle-btn-mobile-view {
+  background-color: transparent;
+  color: #e6dfd0;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.custom-toggle-btn-mobile-view.active {
+  background-color: #f2eeda;
+  color: #000;
+  font-weight: 700;
+}
 
 
 
@@ -142,14 +158,16 @@
 }
 .custom-toggle-wrapper-mobile-plans-view {
   background-color: #3d1212; /* Outer dark background */
-  border-radius: 999px;
-  margin-bottom: 30px;
+  border-radius: 99px;
 }
 .aa{
   /* style={{display:'flex', justifyContent:'center', alignContent:'center', backgroundColor:'yellow'}} */
+  /* margin: 30px 30px 30px 30px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+  /* padding: 10px 10px 10px 10px; */
   /* background-color: yellow; */
 }
 

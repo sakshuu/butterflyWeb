@@ -188,14 +188,14 @@ const Plans = () => {
           <div className="custom-toggle-wrapper-mobile-plans-view d-inline-flex">
             <button
               type="button"
-              className={`custom-toggle-btn ${activePlan === "2BHK" ? "active" : ""}`}
+              className={`custom-toggle-btn-mobile-view ${activePlan === "2BHK" ? "active" : ""}`}
               onClick={() => handlePlanToggle("2BHK")}
             >
               2BHK
             </button>
             <button
               type="button"
-              className={`custom-toggle-btn ${activePlan === "3BHK" ? "active" : ""}`}
+              className={`custom-toggle-btn-mobile-view ${activePlan === "3BHK" ? "active" : ""}`}
               onClick={() => handlePlanToggle("3BHK")}
             >
               3BHK
