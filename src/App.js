@@ -57,6 +57,7 @@ const App = () => {
                 The Butterfly <br />
                 Where Luxury <br /> Takes Flight
               </h1>
+         
                   </div>
               <p className="heroparamainsecation">
                 The Butterfly represents liberation, beauty and aspiration, just  like the life you deserve. It is a 3 & 2 BHK ultra - luxurious project designed to fulfill your desires, much like the joy of witnessing a butterfly in flight.

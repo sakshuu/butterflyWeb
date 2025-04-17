@@ -163,8 +163,8 @@ const Plans = () => {
         <div className='map-left-mobile-view' >
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.871327192764!2d73.8535715!3d18.669769199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c9abe8b094e7%3A0xe107735daae8ad38!2sThe%20Butterfly!5e0!3m2!1sen!2sin!4v1743760760154!5m2!1sen!2sin"  
-            height="650" 
-            style={{border:'0', borderRadius:'10px', width:'100%'}} 
+             
+            style={{border:'0', width:'100%', height:'650px' }} 
             allowFullScreen="" 
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
@@ -172,7 +172,7 @@ const Plans = () => {
           ></iframe>
         </div>
         <div className='mapsideimg-right-mobile-view'>
-          <img src={mapsideimg} style={{width:'100%'}} height="650" alt="Location" />
+          <img src={mapsideimg} style={{width:'100%', backgroundColor:'beige', height:'650px'}}  alt="Location" />
         </div>
       </div>
       </div>

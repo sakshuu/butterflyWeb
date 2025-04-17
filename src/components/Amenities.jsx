@@ -104,10 +104,39 @@ const Amenities = () => {
           A collection of moments that define excellence, Showcasing creativity, craftsmanship, and vision
         </h1>
       </div>
-
+   
       <div className="gallery-container">
         <img src={GroupAboutUs || "/placeholder.svg"} className="gallery-image" draggable={false} alt="Gallery" />
       </div>
+     {/* <div className="grid grid-cols-6 grid-rows-3 gap-2">
+      <div className="col-span-2 row-span-1">
+        <img src={gallery} alt="Building View" className="w-full h-full object-cover rounded-lg" />
+      </div>
+
+      <div className="col-span-2 row-span-1">
+        <img src={galleryone} alt="Elderly Couple" className="w-full h-full object-cover rounded-lg" />
+      </div>
+
+      <div className="col-span-2 row-span-2">
+        <img src={galleryfour} alt="Top View Building" className="w-full h-full object-cover rounded-lg" />
+      </div>
+
+      <div className="col-span-2 row-span-2">
+        <img src={gallerytwo} alt="Aerial Building" className="w-full h-full object-cover rounded-lg" />
+      </div>
+
+      <div className="col-span-2 row-span-1">
+        <img src={galleryfive} alt="Outdoor Gym" className="w-full h-full object-cover rounded-lg" />
+      </div>
+
+      <div className="col-span-2 row-span-1">
+        <img src={gallerythered} alt="Jogging Couple" className="w-full h-full object-cover rounded-lg" />
+      </div>
+
+      <div className="col-span-2 row-span-1">
+        <img src={gallerylast} alt="Yoga Group" className="w-full h-full object-cover rounded-lg" />
+      </div>
+    </div> */}
       </div>
 
 
