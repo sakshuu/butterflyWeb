@@ -7,7 +7,7 @@ const Mynavbar = () => {
   
 <div className='desktop-navbar-main'>
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top navbar-mobile-scrren">
-      <div className="container" style={{margin:'0px 10px 0px 10px'}}>
+      <div className="container" style={{margin:'0px 40px 0px 40px', padding:'0px 0px 0px 0px'}}>
         <img src={Butterfly} alt="" className="logo" />
         <button
           className="navbar-toggler"
@@ -16,8 +16,7 @@ const Mynavbar = () => {
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation" >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">

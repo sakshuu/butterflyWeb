@@ -7,28 +7,7 @@ import * as yup from 'yup';
 import axios from 'axios';
 
 const ContactUs = () => {
-  const ContactInfo = [
-    {
-      title: "Address",
-      description: "Laxmi Nagar,Moshi 412105",
-      image:location
-    },
-    {
-      title: "Mobile number",
-      description: "7030204848",
-      image:calls
-    },
-    {
-      title: "Accessibility",
-      description: "10:00 to 6:00",
-      image:clock
-    },
-    {
-      title: "Email",
-      description: "butterfly.sales23@gmail.com",
-      image:mail
-    }
-  ];
+ 
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -61,7 +40,7 @@ const ContactUs = () => {
   return (<>
   <div className="content-desktop-view">
 
- 
+{/*  
 <div className="row" style={{width:'100%' }}>
   <div className="col-5 " style={{width:'50%'  }}>
     <img src={princess} style={{width:'50vmax', height:'53vmax', marginLeft:'-10%'}}  alt="" />
@@ -108,7 +87,7 @@ Have a question or need more details? Get in touch with us—we’re here to hel
 <div className='headingLandingpage' >
 <div style={{fontSize:'1.4rem', fontWeight:'500', textAlign:'left'}}>Get in Touch</div>
 <h1 className='heroheading-landingpage'>Looking for the perfect partner for your next project? <br/> Get in touch with us today!</h1>
-</div>
+</div> */}
 
 <div className="contact-section">
       <div className="container">
@@ -207,53 +186,7 @@ Have a question or need more details? Get in touch with us—we’re here to hel
     </div>
 
     <div className="content-mobile-view">
-    <div >
-  <div >
-    <img src={princess} style={{width:'100%', height:'100%',}}  alt="" />
-  </div>
-  <div  style={{marginTop:'2%' }}>
-<div className='tagline-small-mobile-view'>A project by: </div>
-<div style={{display:'flex', justifyContent:'center', alignItems:'center', margin:'10px 0px 10px 0px'}}>
-<img src={Vishwaicon} style={{width:'30%'}} alt="" />
-</div>
-<h1 className='heroheading-landingpage-mobile-view'>Contact Details</h1>
-<p className='contactpara'>
-Have a question or need more details? Get in touch with us—we’re here to help! Reach out via call, email, or visit us, and let’s build something amazing together.
-</p>
-
-<div className="row">
-{ContactInfo.map((item, index) => ( 
-  <div className="col-6" >
-    <div>
-      <div className="d-flex gap-2" style={{marginTop:'10%', width:'100%', height:'auto'}} >
-        <div className='contact-vishwa-icons-mobile-view'>
-          <img src={item.image} style={{width:'1.8rem'}} alt="" />
-          </div>
-        <div className='contact-vishwa-mobile-view'>
-{/* <div className='contact-vishwa-title'>{item.title}</div> */}
-<div className='contact-vishwa-desc'>{item.description}</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  ))}
-</div>
-<hr style={{borderTop:'2px solid rgba(241, 238, 216, 1)'}}/>
-<div style={{display:'flex' , justifyContent:'center', alignItems:'center'}} >
-
-<div className='contact-social-media'>
-<a href=" https://www.instagram.com/vishwa_developers23">
-<img src={insta} width={26} alt="" />
-</a>
-</div>
-<div className='contact-social-media' style={{marginLeft:'30px'}}>
-<a href="https://www.facebook.com/share/1Bp7mrKFrS">
-<img src={facebook} width={26}  alt="" />
-</a>
-</div>
-</div>
-  </div>
-</div>
+  
 <div className='headingLandingpage'>
 <div className='tagline-small-mobile-view'>Get in Touch</div>
 <h1 className='heroheading-landingpage-mobile-view'>Looking for the perfect partner for your next project? <br/> Get in touch with us today!</h1>

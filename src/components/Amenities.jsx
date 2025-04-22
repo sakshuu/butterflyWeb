@@ -150,7 +150,7 @@ const Amenities = () => {
 </div>
 
 <div className="amenities-container-mbile-view">
-      {amenities.map((item, index) => {
+      {/* {amenities.map((item, index) => {
         const isActive = activeIndex === index
         return (
           <div className={`amenity-card-mobile-view ${isActive ? "active" : ""}`}
@@ -171,8 +171,9 @@ const Amenities = () => {
                 </div>
                 <div>
                   <div>
-{/* <img src={arrowdown} width={14} alt="arrow"/> */}
-                  {/* <h5 className="amenity-title-body-mobile-view">{item.title}</h5> */}
+
+<img src={arrowdown} width={14} alt="arrow"/>
+                  <h5 className="amenity-title-body-mobile-view">{item.title}</h5>
                   </div>
                   <div className="amenity-description-mobile-view">{item.description}</div>
                 </div>
@@ -180,7 +181,106 @@ const Amenities = () => {
             )}
           </div>
         )
-      })}
+      })} */}
+       {amenities.map((item, index) => {
+          const isActive = activeIndex === index
+          return (
+            <div
+              key={index}
+              className={`card mb-3 border-0 rounded-3 ${isActive ? "active" : ""}`}
+              style={{
+                backgroundColor: "rgba(106, 57, 58, 0.9)",
+                overflow: "hidden",
+              }}
+            >
+              {isActive ? (
+                <div className="card-body p-1 mb-3">
+                  <div className="row g-0">
+                    {/* Left side - Full image */}
+                    <div className="col-5">
+                      <div style={{  position: "relative" , textAlign:'center'}}>
+                        <img
+                          src={item.image || "/placeholder.svg"}
+                          fill
+                          alt={item.title}
+                          width='100'
+                          style={{ objectFit: "cover", borderRadius: "10px 0 0 10px"}}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Right side - Title, arrow and description */}
+                    <div className="col-7">
+                      {/* <div className=""> */}
+                        <div className="d-flex justify-content-between align-items-center">
+                          <h6
+                            style={{
+                              color: "white",
+                              fontSize: "0.9rem",
+                              fontWeight: "500",
+                              lineBreak:'auto',
+                              margin: 0,
+                            }}
+                          >
+                            {item.title}
+                          </h6>
+                          <div
+                            className="d-flex align-items-center justify-content-center rounded-circle mb-4"
+                            style={{
+                              backgroundColor: "rgba(255, 255, 255, 0.6)",
+                              width: "25px",
+                              height: "25px",
+                              cursor: "pointer",
+                              marginRight:'12px'
+                            }}
+                            onClick={() => handleToggle(index)}
+                          >
+                            <img src={arrowup} width={14} alt="arrow" />
+                          </div>
+                        </div>
+                        <p
+                          style={{
+                            fontSize: "0.8rem",
+                            lineHeight: "1.4rem",
+                            color: "rgba(255, 255, 255, 0.8)",
+                            lineHeight:'0.9rem'
+                          }} >
+                          {item.description}
+                        </p>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div
+                  className="card-header border-0 d-flex justify-content-between align-items-center p-3"
+                  onClick={() => handleToggle(index)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <h5
+                    className="mb-0"
+                    style={{
+                      color: "rgba(255, 255, 255, 0.7)",
+                      fontSize: "0.9rem",
+                      fontWeight: "500",
+                    }}
+                  >
+                    {item.title}
+                  </h5>
+                  <div
+                    className="d-flex align-items-center justify-content-center rounded-circle"
+                    style={{
+                      backgroundColor: "rgba(255, 255, 255, 0.6)",
+                      width: "25px",
+                      height: "25px",
+                    }}
+                  >
+                    <img src={arrowdown} width={14} alt="arrow" />
+                  </div>
+                </div>
+              )}
+            </div>
+          )
+        })}
     </div>
 
 

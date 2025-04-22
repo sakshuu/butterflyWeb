@@ -7,7 +7,12 @@
     text-align: center;
 }
 
-
+.bnt-close-model {
+  background-color: white !important;
+  color: black;
+  border-radius: 100%;
+  padding: 10px;
+}
 
 .plan-image {
     width: 55vmax; 
@@ -19,9 +24,6 @@
     display: flex;
     gap: 20px;
 }
-
-
-
 .plans-content {
     display: flex;
     flex-direction: column;

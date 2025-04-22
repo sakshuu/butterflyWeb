@@ -6,6 +6,8 @@ import Plans from './components/Plans';
 import Amenities from './components/Amenities';
 import ContactUs from './components/ContactUs';
 import { covermain, MobileCoverbg } from './assets/img';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   const contactRef = useRef(null); 

@@ -15,5 +15,6 @@ export { default as or } from "./or.png";
 export { default as Reralogo } from "./Reralogo.png";
 export { default as copy } from "./copy.png";
 export { default as Butterfly } from "./Butterfly.png";
+export { default as Butterflylogo } from "./Butterflylogo.png";
 export { default as bullet } from "./bullet.png";
 export { default as arrowup } from "./arrowup.png";
