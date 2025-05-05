@@ -22,9 +22,10 @@ const ContactUs = () => {
       message: yup.string().required('Type Your message'),
     }),
     // axios.post('http://localhost:5000/send-email', values)
+    // axios.post('https://butterflyserver.onrender.com/send-email', values)
     onSubmit: (values, { resetForm }) => {
       // Send form data to the backend
-      axios.post('https://butterflyserver.onrender.com/send-email', values)
+      axios.post('home/thebutt/admin.thebutterflypune.com/send-email', values)
         .then((response) => {
           console.log('Email sent successfully!', response.data);
           alert('Message sent successfully!');
