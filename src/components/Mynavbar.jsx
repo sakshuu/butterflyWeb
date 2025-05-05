@@ -8,7 +8,9 @@ const Mynavbar = () => {
 <div className='desktop-navbar-main'>
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top navbar-mobile-scrren">
       <div className="container" style={{margin:'0px 40px 0px 40px', padding:'0px 0px 0px 0px'}}>
-        <img src={Butterfly} alt="" className="logo" />
+        <a  href="#home" className='nav-link'>
+        <img src={Butterfly} alt=""  style={{cursor:'pointer', width:'90%'}} className="logo " />
+        </a>
         <button
           className="navbar-toggler"
           type="button"
