@@ -27,3 +27,4 @@ export { default as GroupAboutUs } from "./GroupAboutUs.png";
 export { default as safariimg } from "./safariimg.png";
 export { default as mapsideimg } from "./mapsideimg.png";
 export { default as MobileCoverbg } from "./MobileCoverbg.png";
+export { default as swiperfour } from "./swiperfour.png";

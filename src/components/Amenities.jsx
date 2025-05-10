@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { colswiper, colswiperone, colswipersecond, colswiperthered, gallery, galleryfive, galleryfour, gallerylast, galleryone, gallerythered, gallerytwo, GroupAboutUs } from "../assets/img"
+import { colswiper, colswiperone, colswipersecond, colswiperthered, gallery, galleryfive, galleryfour, gallerylast, galleryone, gallerythered, gallerytwo, GroupAboutUs, swiperfour } from "../assets/img"
 import { arrowdown, arrowup } from "../assets/img/icons"
 import "../assets/css/about.css"
 
@@ -59,7 +59,7 @@ const Amenities = () => {
       title: "A cut Above the rest",
       description:
         "Experience unmatched luxury, superior craftsmanship, and a lifestyle designed for those who seek the extraordinary.",
-      image: colswipersecond,
+      image: swiperfour,
     },
   ]
 

@@ -36,7 +36,7 @@ const Mynavbar = () => {
               <a className="nav-link" href="#plans">Plans</a>
             </li>
             <li className="nav-item">
-              <a href="#contact" type='button' style={{textDecoration:'none', fontSize:'0.8rem'}}className="goldBtn">Contact Now
+              <a href="#contact" type='button' style={{textDecoration:'none', fontSize:'0.8rem', marginTop:'6px'}}className="goldBtn">Contact Now
               </a>
             </li>
           </ul>
